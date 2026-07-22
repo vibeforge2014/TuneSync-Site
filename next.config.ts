@@ -7,7 +7,7 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 /**
  * Base path is opt-in via the BASE_PATH env var. Set it when building for a
  * sub-path deployment such as GitHub Pages:
- *   BASE_PATH=/TuneSync pnpm build
+ *   BASE_PATH=/TuneSync-Site pnpm build
  * For local dev or a custom-domain deploy, leave it unset (served from "/").
  */
 const basePath = process.env.BASE_PATH ?? "";

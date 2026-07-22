@@ -5,7 +5,7 @@
  *   pnpm deploy          # build + push to gh-pages branch
  *
  * What it does:
- *   1. Runs `BASE_PATH=/TuneSync pnpm build`
+ *   1. Runs `BASE_PATH=/TuneSync-Site pnpm build`
  *   2. Copies site/out into a fresh gh-pages branch via a temp git worktree
  *   3. Commits + pushes to origin/gh-pages
  *
@@ -22,7 +22,7 @@ const SITE_DIR = process.cwd();
 const OUT_DIR = path.join(SITE_DIR, "out");
 const BRANCH = "gh-pages";
 const REMOTE = "origin";
-const BASE_PATH = "/TuneSync";
+const BASE_PATH = "/TuneSync-Site";
 
 function run(cmd, opts = {}) {
   console.log(`$ ${cmd}`);
@@ -97,4 +97,4 @@ execSync(`git push ${REMOTE} ${BRANCH}:${BRANCH}`, { cwd: tmp, stdio: "inherit" 
 
 cleanup();
 
-console.log(`\nDeployed. Site will update at https://jackzhen1324.github.io${BASE_PATH}/ within 1-2 min.`);
+console.log(`\nDeployed. Site will update at https://vibeforge2014.github.io${BASE_PATH}/ within 1-2 min.`);
