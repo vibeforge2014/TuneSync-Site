@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "../../../i18n/routing";
 import { ChevronRight } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
@@ -9,6 +9,7 @@ import Reveal from "./Reveal";
 
 export default function Hero() {
   const t = useTranslations("home");
+  const locale = useLocale();
 
   return (
     <section className="relative overflow-hidden">
@@ -41,7 +42,11 @@ export default function Hero() {
         <Reveal delay={240} className="relative mt-16 w-full max-w-xs">
           <div className="relative float-slow">
             <span className="glow-halo" aria-hidden />
-            <PhoneMockup screenshot="home.png" alt={t("phoneLabel")} label={t("phoneLabel")} />
+            <PhoneMockup
+              screenshot={`${locale}/home.png`}
+              alt={t("phoneLabel")}
+              label={t("phoneLabel")}
+            />
           </div>
         </Reveal>
       </div>

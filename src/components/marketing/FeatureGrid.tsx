@@ -1,13 +1,14 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Server, Music4, Mic, Sparkles, Wand2, TrendingUp, type LucideIcon } from "lucide-react";
+import { Server, Music4, Mic, AudioWaveform, Sparkles, Wand2, TrendingUp, type LucideIcon } from "lucide-react";
 import Reveal from "./Reveal";
 
 const ITEMS: { key: string; icon: LucideIcon }[] = [
   { key: "library", icon: Server },
   { key: "player", icon: Music4 },
   { key: "karaoke", icon: Mic },
+  { key: "recordingStudio", icon: AudioWaveform },
   { key: "ai", icon: Sparkles },
   { key: "metadata", icon: Wand2 },
   { key: "discovery", icon: TrendingUp },

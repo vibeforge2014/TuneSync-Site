@@ -14,9 +14,9 @@ pnpm dev          # http://localhost:3000  (served from "/")
 To preview the GitHub Pages build locally (with the `/TuneSync` base path):
 
 ```bash
-BASE_PATH=/TuneSync pnpm build
+BASE_PATH=/TuneSync-Site pnpm build
 cd out && python3 -m http.server 8080
-# open http://localhost:8080/TuneSync/
+# open http://localhost:8080/TuneSync-Site/
 ```
 
 ## Deploy to GitHub Pages
@@ -51,8 +51,7 @@ src/
 ├── app/[locale]/            # localized routes (zh-CN, en)
 │   ├── page.tsx             # home
 │   ├── features/            # feature deep-dives
-│   ├── pricing/             # free vs VIP
-│   └── docs/                # 9 doc pages + home
+│   └── docs/                # product guides, including Recording Studio
 ├── components/
 │   ├── site/                # Header, Footer, LangSwitcher, ThemeToggle
 │   ├── marketing/           # Hero, FeatureGrid, Showcase, PhoneMockup
@@ -61,12 +60,11 @@ src/
 i18n/
 ├── routing.ts               # locales: zh-CN (default), en
 └── messages/{zh-CN,en}.json # all copy lives here
-public/screenshots/          # drop real screenshots here (see its README)
+public/screenshots/          # current iPhone 17 product screenshots
 ```
 
 ## Screenshots
 
-While `public/screenshots/` only contains a README, every screenshot slot
-renders a gradient placeholder. Drop a file with the matching name in and
-pass `screenshot="<name>"` to `PhoneMockup` / `ShowcaseSection` to enable it.
-See `public/screenshots/README.md` for the filename list.
+Product screenshots are checked in under `public/screenshots/`, with
+locale-specific marketing shots in `zh-CN/` and `en/`. See
+`public/screenshots/README.md` for the current inventory.

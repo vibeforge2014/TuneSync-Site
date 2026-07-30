@@ -23,6 +23,7 @@ export const DOC_NAV: DocNavGroup[] = [
 			{ href: '/docs/player', labelKey: 'docsNav.player' },
 			{ href: '/docs/lyrics', labelKey: 'docsNav.lyrics' },
 			{ href: '/docs/karaoke', labelKey: 'docsNav.karaoke' },
+			{ href: '/docs/recording-studio', labelKey: 'docsNav.recordingStudio' },
 			{ href: '/docs/ai', labelKey: 'docsNav.ai' },
 			{ href: '/docs/metadata', labelKey: 'docsNav.metadata' },
 			{ href: '/docs/discovery', labelKey: 'docsNav.discovery' },

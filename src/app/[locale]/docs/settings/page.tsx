@@ -19,7 +19,7 @@ export default async function SettingsPage({ params }: { params: Promise<{ local
 			<ScreenshotPlaceholder
 				label={t('shotSettings')}
 				hint={t('shotHint')}
-				screenshot="settings.png"
+				screenshot={`${locale}/settings.png`}
 				tint="#64748b"
 			/>
 

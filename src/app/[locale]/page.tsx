@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Server, Music4, Mic, Sparkles, Disc3, TrendingUp } from "lucide-react";
+import { Server, Music4, Mic, AudioWaveform, Disc3, TrendingUp } from "lucide-react";
 import Hero from "../../components/marketing/Hero";
 import IntroSection from "../../components/marketing/IntroSection";
 import FeatureRow from "../../components/marketing/FeatureRow";
@@ -29,7 +29,7 @@ export default async function HomePage({
         title={f("library.featureTitle")}
         description={f("library.featureDesc")}
         bullets={[f("library.featureB1"), f("library.featureB2"), f("library.featureB3"), f("library.featureB4")]}
-        screenshot="library.png"
+        screenshot={`${locale}/library.png`}
         screenshotLabel={f("library.screenshot")}
         icon={Server}
       />
@@ -53,6 +53,21 @@ export default async function HomePage({
         icon={Mic}
       />
       <FeatureRow
+        eyebrow={f("recordingStudio.title")}
+        title={f("recordingStudio.featureTitle")}
+        description={f("recordingStudio.featureDesc")}
+        bullets={[
+          f("recordingStudio.featureB1"),
+          f("recordingStudio.featureB2"),
+          f("recordingStudio.featureB3"),
+          f("recordingStudio.featureB4"),
+        ]}
+        screenshot={`${locale}/recording-studio.png`}
+        screenshotLabel={f("recordingStudio.screenshot")}
+        icon={AudioWaveform}
+        reverse
+      />
+      <FeatureRow
         eyebrow={f("ai.title")}
         title={f("ai.featureTitle")}
         description={f("ai.featureDesc")}
@@ -60,7 +75,6 @@ export default async function HomePage({
         screenshot="ai-dj.png"
         screenshotLabel={f("ai.screenshot")}
         icon={Disc3}
-        reverse
       />
       <FeatureRow
         eyebrow={f("discovery.title")}
@@ -70,6 +84,7 @@ export default async function HomePage({
         screenshot="discovery.png"
         screenshotLabel={f("discovery.screenshot")}
         icon={TrendingUp}
+        reverse
       />
 
       <div className="hr-soft mx-auto max-w-5xl" />

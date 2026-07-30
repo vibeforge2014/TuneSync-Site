@@ -10,8 +10,8 @@
 		"backHome": "返回首页"
 	},
 	"meta": {
-		"title": "TuneSync — 将你的音乐集中到一处",
-		"description": "连接 NAS 或本地文件夹，TuneSync 将分散的音乐整理为一个曲库，自动补全封面与歌词，并支持去除原唱跟随伴奏演唱。"
+		"title": "TuneSync — 个人音乐库、歌词与 K 歌录音",
+		"description": "连接 NAS 或本地文件夹，在 iPhone 上统一浏览、搜索与播放个人音乐库；补全元数据和歌词，分离人声，并在录音工作室中精修 K 歌作品。"
 	},
 	"nav": {
 		"features": "功能特性",
@@ -25,9 +25,9 @@
 		"privacy": "隐私政策"
 	},
 	"home": {
-		"badge": "为发烧友打造的原生 iOS 音乐 App",
+		"badge": "TuneSync 1.0.7 · 原生 iPhone 音乐 App",
 		"headline": "把你的音乐，<accent>集中到一处</accent>",
-		"subhead": "连接 NAS 或本地文件夹，TuneSync 将分散的音乐整理为一个曲库——自动补全封面与歌词，还支持去除原唱、跟随伴奏演唱。",
+		"subhead": "连接 NAS 与本地文件夹，统一浏览、搜索和播放个人曲库；补全元数据与歌词，把喜欢的歌变成伴奏，并在全新录音工作室中精修演唱。",
 		"introTitle": "让音乐不再分散在多个 App 之间。",
 		"introBody": "TuneSync 将服务器、文件夹与播放器整合在一起，连接后即可使用。",
 		"ctaPrimary": "开始使用",
@@ -35,9 +35,9 @@
 		"ctaDownload": "下载 iOS 版",
 		"downloadEyebrow": "下载",
 		"downloadTitle": "下载 TuneSync",
-		"downloadSubtitle": "先从 iPhone 开始，把自己的音乐服务器、本地曲库和播放器统一起来。今日仅支持 iPhone；Android 在规划中。",
+		"downloadSubtitle": "在 iPhone 上连接音乐服务器与本地文件夹，统一管理曲库、歌词、K 歌和录音。目前提供 iPhone 版。",
 		"downloadAvailable": "当前可用",
-		"downloadComingSoon": "敬请期待",
+		"downloadComingSoon": "暂未提供",
 		"downloadIOSAction": "立即开始",
 		"downloadIOSAria": "前往 iOS 快速开始文档",
 		"downloadUnavailable": "暂未开放",
@@ -48,7 +48,7 @@
 			},
 			"android": {
 				"label": "Android",
-				"desc": "Android 版本正在规划中，未来会带来同样完整的音乐管理体验。"
+				"desc": "当前没有 Android 版本，TuneSync 现阶段专注于原生 iPhone 体验。"
 			},
 			"windows": {
 				"label": "Windows",
@@ -95,7 +95,7 @@
 	},
 	"features": {
 		"title": "功能概览",
-		"subtitle": "从曲库管理、播放、整理到伴唱——集中在一个应用中。",
+		"subtitle": "从曲库管理、播放和歌词，到 K 歌与录音精修——集中在一个应用中。",
 		"pageTitle": "功能特性",
 		"library": {
 			"title": "曲库",
@@ -127,8 +127,19 @@
 			"featureB1": "Core ML 设备端人声分离（MDX / DTTNet）",
 			"featureB2": "实时调节原声音轨，3-2-1 倒计时开录",
 			"featureB3": "麦克风录音带输入/输出延时补偿",
-			"featureB4": "录音保存为「我的录音」，可回放与分享",
+			"featureB4": "录音保存为「我的录音」，可继续进入录音工作室",
 			"screenshot": "K 歌截图"
+		},
+		"recordingStudio": {
+			"title": "录音工作室",
+			"desc": "查看真实波形，裁剪、调音并以非破坏方式保存你的 K 歌录音。",
+			"featureTitle": "把一次演唱，打磨成想留下的版本",
+			"featureDesc": "保存 K 歌录音后，可直接进入录音工作室。沿真实波形选择保留片段，调整总音量并加入录音棚或音乐厅氛围；原始录音始终保留，可随时对比、撤销或恢复。",
+			"featureB1": "真实波形时间线，拖动手柄精确裁剪",
+			"featureB2": "总音量、录音棚与音乐厅空间氛围",
+			"featureB3": "原始 / 编辑后即时试听，支持撤销与重做",
+			"featureB4": "非破坏保存、分享成品并一键恢复原始录音",
+			"screenshot": "TuneSync 录音工作室"
 		},
 		"ai": {
 			"title": "AI 助手",
@@ -173,6 +184,7 @@
 		"player": "播放器",
 		"lyrics": "歌词",
 		"karaoke": "K 歌",
+		"recordingStudio": "录音工作室",
 		"ai": "AI 助手",
 		"metadata": "元数据",
 		"discovery": "发现",
@@ -416,11 +428,62 @@
 			},
 			"recordings": {
 				"title": "我的录音",
-				"body": "录好的歌存在「设置 → 我的录音」，格式是 m4a。能回放、能分享出去（AirDrop、微信、文件都行），也能清掉省空间。录音里既有你唱的也有伴奏，自动混好、做了延时补偿让人声和伴奏对得上。"
+				"body": "录好的歌存在「设置 → 我的录音」，格式为 m4a。可以回放、分享或删除，也可打开录音工作室继续裁剪和调音。录音包含演唱与伴奏，并应用输入/输出延时补偿以保持同步。"
+			},
+			"studio": {
+				"title": "保存后还能继续编辑",
+				"body": "停止并保存后，点「编辑录音」即可进入录音工作室；也可稍后从「设置 → 我的录音」打开。编辑会生成单独的成品文件，原始录音不会被覆盖。"
+			},
+			"compatibility": {
+				"title": "K 歌设备兼容性",
+				"body": "App 需要 iOS 18 或更高版本。iPhone 13 及更新机型支持完整的自动人声分离；iPhone 12 可手动准备单首歌曲；iPhone 11 及更早机型不能创建新的分离结果，但仍可使用已缓存歌曲和已有录音。"
 			},
 			"live": {
 				"title": "实时活动",
 				"body": "分离的时候支持实时活动（Live Activity）——灵动岛和锁屏上能看到这首歌分离到哪了，不用守在 App 里等。"
+			}
+		},
+		"recordingStudio": {
+			"title": "录音工作室",
+			"lead": "用真实波形裁剪 K 歌录音，调整声音并保留随时可恢复的原始版本。",
+			"screenshot": "录音工作室的波形裁剪界面",
+			"open": {
+				"title": "如何打开",
+				"body": "K 歌录音保存完成后，点击「编辑录音」；或者前往「设置 → 我的录音」，打开某条录音的菜单并选择编辑。"
+			},
+			"workflow": {
+				"title": "编辑流程",
+				"step1": {
+					"title": "沿真实波形选择片段",
+					"body": "拖动时间线两端的裁剪手柄，或把播放头停在目标位置后设为开始或结束。成品时长会实时更新。"
+				},
+				"step2": {
+					"title": "试听原始与编辑效果",
+					"body": "在「原始」和「编辑后」之间切换，用播放、前后 5 秒和时间线快速检查切点与声音。"
+				},
+				"step3": {
+					"title": "调整声音",
+					"body": "切换到「声音」，调整总音量，并在无氛围、录音棚与音乐厅三种空间感之间选择。"
+				},
+				"step4": {
+					"title": "保存或分享",
+					"body": "点「保存」渲染编辑版本。保存后可直接分享成品；需要重新开始时，可从更多菜单恢复原始录音。"
+				}
+			},
+			"controls": {
+				"title": "编辑控制",
+				"timeline": "波形时间线显示裁剪范围、播放头和最终时长",
+				"preview": "原始 / 编辑后 A/B 试听，支持前后 5 秒跳转",
+				"history": "撤销与重做会记录本次打开期间的裁剪和声音调整",
+				"share": "分享始终使用当前有效版本；保存编辑后分享成品"
+			},
+			"nondestructive": {
+				"title": "非破坏编辑",
+				"body": "保存编辑不会覆盖原始 m4a。TuneSync 会保留原始文件并生成单独的编辑版本，因此可以反复调整或一键恢复。"
+			},
+			"format": {
+				"title": "文件与存储",
+				"body": "录音和编辑成品保存在 App 的本地存储中。列表会分别标记「已编辑」、成品时长和总占用空间；删除录音时会移除其原始与编辑文件。"
 			}
 		},
 		"ai": {
@@ -618,21 +681,21 @@
 		},
 		"plus": {
 			"title": "TuneSync Plus",
-			"lead": "一项可选订阅，解锁进阶音频与元数据功能。不订阅也能正常使用，Plus 是为重度用户准备的。",
+			"lead": "一项可选订阅，解锁进阶音频、歌词、元数据与发现功能。核心播放始终免费。",
 			"overview": {
 				"title": "Plus 解锁什么",
-				"body": "TuneSync Plus 把以下四个能力单独打包——它们要么吃设备算力，要么刮削时更费力："
+				"body": "TuneSync Plus 解锁以下进阶能力；部分计算密集型功能也为免费用户保留周期性体验额度："
 			},
 			"features": {
 				"title": "Plus 包含",
 				"separation": "人声分离（K 歌）——在本机把曲目拆成人声和伴奏",
 				"lyrics": "同步歌词生成——让 App 在本机给纯文本歌词加时间轴",
 				"scraping": "精准元数据刮削——最慢但最细致的刮削模式，会查遍所有来源",
-				"trends": "潮汐发现——首页的多平台榜单"
+				"trends": "Apple Music 潮流发现——查看当前地区的 Top 10"
 			},
 			"free": {
 				"title": "免费部分",
-				"body": "其他都免费，包括：连接 WebDAV / SMB / NFS / FTP 服务器、索引与浏览曲库、完整播放（含已有时间轴的同步歌词）、ShazamKit 识曲、单曲元数据刷新。"
+				"body": "核心播放永久免费，包括连接 WebDAV / SMB / NFS / FTP、索引与浏览曲库、后台播放、已有同步歌词、识曲与基础元数据整理。人声分离与同步歌词生成共享每周 2 次免费额度，BPM 与音频特征分析每天 5 次；额度与设备兼容性以 App 内显示为准。"
 			},
 			"purchase": {
 				"title": "购买",

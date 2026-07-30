@@ -31,12 +31,26 @@ export async function generateMetadata({
       template: `%s · ${site}`,
     },
     description: t.description,
-    metadataBase: new URL("https://tunesync.app"),
+    metadataBase: new URL("https://vibeforge2014.github.io"),
     openGraph: {
       title: t.title,
       description: t.description,
       siteName: site,
       type: "website",
+      images: [
+        {
+          url: "/TuneSync-Site/og.png",
+          width: 1200,
+          height: 630,
+          alt: `${site} — ${messages.common.tagline}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t.title,
+      description: t.description,
+      images: ["/TuneSync-Site/og.png"],
     },
   };
 }

@@ -19,7 +19,7 @@ export default async function LibraryPage({
       <ScreenshotPlaceholder
         label={t("shotLibrary")}
         hint={t("shotHint")}
-        screenshot="library.png"
+        screenshot={`${locale}/library.png`}
         tint="#0ea5e9"
       />
 

@@ -16,6 +16,11 @@ Complete inventory of every image the site depends on, where it lives on disk, w
 
 **Replacement tips:** square PNG with the full-bleed TuneSync mark (no inner padding), 1024×1024 minimum. The component applies its own corner radius and ring, so the source file should be flat-cornered.
 
+## Social preview
+
+`public/og.png` is the 1200×630 Open Graph / X card for TuneSync 1.0.7.
+It uses the current coral icon treatment and Recording Studio waveform motif.
+
 ---
 
 ## Screenshots
@@ -28,15 +33,17 @@ All screenshots live in `public/screenshots/`. They are referenced by bare filen
 
 | File                                          | Size      | Where it appears                                                                                                                         |
 | --------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `public/screenshots/home.png`                 | 1206×2622 | Homepage hero (`Hero.tsx` → `PhoneMockup`). Highest-visibility shot.                                                                     |
-| `public/screenshots/library.png`              | 1206×2622 | Homepage showcase row 1 (`[locale]/page.tsx`), `/features` Library row (`features/page.tsx`), `/docs/library` (`docs/library/page.tsx`). |
+| `public/screenshots/{locale}/home.png`        | 1206×2622 | Homepage hero (`Hero.tsx` → `PhoneMockup`). Highest-visibility shot.                                                                     |
+| `public/screenshots/{locale}/library.png`     | 1206×2622 | Homepage showcase row 1 (`[locale]/page.tsx`), `/features` Library row (`features/page.tsx`), `/docs/library` (`docs/library/page.tsx`). |
+| `public/screenshots/{locale}/search.png`      | 1206×2622 | `/features` Search/Discovery row and `/docs/discovery`.                                                                                   |
+| `public/screenshots/{locale}/settings.png`    | 1206×2622 | `/docs/settings`.                                                                                                                        |
+| `public/screenshots/{locale}/recording-studio.png` | 1206×2622 | Homepage and `/features` Recording Studio rows, plus `/docs/recording-studio`.                                                     |
 | `public/screenshots/player-lyrics.png`        | 1206×2622 | Homepage showcase row 2, `/features` Playback row, `/docs/player`.                                                                       |
 | `public/screenshots/karaoke.png`              | 1206×2622 | Homepage showcase row 3, `/features` Karaoke row, `/docs/karaoke`.                                                                       |
 | `public/screenshots/ai-dj.png`                | 1206×2622 | Homepage showcase row 4, `/features` AI row, `/docs/ai`, AI section phone mockup (`AISection.tsx`).                                      |
 | `public/screenshots/metadata.png`             | 1206×2622 | `/features` Metadata row, `/docs/metadata`.                                                                                              |
-| `public/screenshots/discovery.png`            | 1206×2622 | Homepage showcase row 5, `/features` Discovery row, `/docs/discovery`.                                                                   |
+| `public/screenshots/discovery.png`            | 1206×2622 | Homepage discovery row.                                                                                                                  |
 | `public/screenshots/lyrics.png`               | 1206×2622 | `/docs/lyrics` only.                                                                                                                     |
-| `public/screenshots/settings.png`             | 1206×2622 | `/docs/settings` only.                                                                                                                   |
 | `public/screenshots/getting-started.png`      | 1206×2622 | `/docs/getting-started` only.                                                                                                            |
 | `public/screenshots/getting-started-dark.png` | 1206×2622 | **Currently unreferenced** — kept for a future dark-mode variant of the getting-started page. Safe to delete if unused.                  |
 

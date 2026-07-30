@@ -61,6 +61,14 @@ export default async function KaraokePage({
       <h2>{t("recordings.title")}</h2>
       <p>{t("recordings.body")}</p>
 
+      <Callout variant="tip" title={t("studio.title")}>
+        <p>{t("studio.body")}</p>
+      </Callout>
+
+      <Callout variant="info" title={t("compatibility.title")}>
+        <p>{t("compatibility.body")}</p>
+      </Callout>
+
       <h2>{t("live.title")}</h2>
       <p>{t("live.body")}</p>
     </DocsArticle>

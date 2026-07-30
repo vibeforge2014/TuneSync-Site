@@ -10,8 +10,8 @@
 		"backHome": "Back to home"
 	},
 	"meta": {
-		"title": "TuneSync — Your music, all in one place",
-		"description": "Connect a NAS or local folders — TuneSync consolidates your music into a single library, automatically fills in artwork and lyrics, and can remove vocals for singing along."
+		"title": "TuneSync — Personal music, lyrics & karaoke recording",
+		"description": "Connect a NAS or local folders, then browse, search, and play one personal library on iPhone. Enrich metadata and lyrics, separate vocals, and polish karaoke takes in Recording Studio."
 	},
 	"nav": {
 		"features": "Features",
@@ -25,9 +25,9 @@
 		"privacy": "Privacy"
 	},
 	"home": {
-		"badge": "A native iOS music app built for power users",
+		"badge": "TuneSync 1.0.7 · Native music for iPhone",
 		"headline": "Your music, <accent>all in one place</accent>",
-		"subhead": "Connect a NAS or local folders — TuneSync consolidates your music into a single library, automatically fills in artwork and lyrics, and can even remove vocals so you can sing along.",
+		"subhead": "Connect a NAS and local folders, then browse, search, and play one personal library. Enrich metadata and lyrics, turn favorite tracks into accompaniment, and polish your takes in the new Recording Studio.",
 		"introTitle": "Music shouldn't be spread across half a dozen apps.",
 		"introBody": "TuneSync brings your servers, folders, and player together. Connect once and you're ready.",
 		"ctaPrimary": "Get started",
@@ -35,9 +35,9 @@
 		"ctaDownload": "Download for iOS",
 		"downloadEyebrow": "Download",
 		"downloadTitle": "Download TuneSync",
-		"downloadSubtitle": "Start on iPhone today and bring your music servers, local library, and player into one place. iPhone only today; Android is on the roadmap.",
+		"downloadSubtitle": "Connect music servers and local folders on iPhone, then manage your library, lyrics, karaoke, and recordings in one place. TuneSync is currently available for iPhone.",
 		"downloadAvailable": "Available now",
-		"downloadComingSoon": "Coming soon",
+		"downloadComingSoon": "Unavailable",
 		"downloadIOSAction": "Get started",
 		"downloadIOSAria": "Open the iOS getting started guide",
 		"downloadUnavailable": "Not available yet",
@@ -48,7 +48,7 @@
 			},
 			"android": {
 				"label": "Android",
-				"desc": "Android is on the roadmap, with the same complete music management experience planned."
+				"desc": "There is no Android version today; TuneSync is currently focused on a native iPhone experience."
 			},
 			"windows": {
 				"label": "Windows",
@@ -95,7 +95,7 @@
 	},
 	"features": {
 		"title": "Features",
-		"subtitle": "Library, playback, organizing, and singing along — together in one app.",
+		"subtitle": "Library, playback, lyrics, karaoke, and recording polish — together in one app.",
 		"pageTitle": "Features",
 		"library": {
 			"title": "Library",
@@ -127,8 +127,19 @@
 			"featureB1": "On-device Core ML separation (MDX / DTTNet)",
 			"featureB2": "Live vocal-level control with a 3-2-1 countdown",
 			"featureB3": "Mic recording with input/output latency compensation",
-			"featureB4": "Saves to “My Recordings” for playback and sharing",
+			"featureB4": "Saves to “My Recordings” with a direct path into Recording Studio",
 			"screenshot": "Karaoke screenshot"
+		},
+		"recordingStudio": {
+			"title": "Recording Studio",
+			"desc": "See the real waveform, trim and shape your karaoke recordings, and save without touching the original.",
+			"featureTitle": "Polish a take into the version worth keeping",
+			"featureDesc": "After saving a karaoke take, open it directly in Recording Studio. Select the keep range on its real waveform, adjust master volume, and add Studio or Concert Hall ambience. The original stays intact for instant comparison, undo, or restoration.",
+			"featureB1": "Real waveform timeline with precise trim handles",
+			"featureB2": "Master volume plus Studio and Concert Hall ambience",
+			"featureB3": "Original / Edited A/B preview with undo and redo",
+			"featureB4": "Non-destructive save, share, and one-tap restore",
+			"screenshot": "TuneSync Recording Studio"
 		},
 		"ai": {
 			"title": "AI assistant",
@@ -173,6 +184,7 @@
 		"player": "Player",
 		"lyrics": "Lyrics",
 		"karaoke": "Karaoke",
+		"recordingStudio": "Recording Studio",
 		"ai": "AI assistant",
 		"metadata": "Metadata",
 		"discovery": "Discovery",
@@ -416,11 +428,62 @@
 			},
 			"recordings": {
 				"title": "My Recordings",
-				"body": "Saved recordings live in Settings → My Recordings, as .m4a files. Play them back, share them (AirDrop, WeChat, Files), or clear them to free space. A recording contains both your voice and the accompaniment, auto-mixed with latency compensation so the vocal and backing stay aligned."
+				"body": "Saved takes live in Settings → My Recordings as .m4a files. Play, share, or delete them, or open Recording Studio to trim and shape the sound. A take contains your vocal and accompaniment with input/output latency compensation to keep them aligned."
+			},
+			"studio": {
+				"title": "Keep editing after you save",
+				"body": "After Save and Stop, choose Edit Recording to enter Recording Studio immediately. You can also open it later from Settings → My Recordings. Edits render to a separate file, so the original take is never overwritten."
+			},
+			"compatibility": {
+				"title": "Karaoke device compatibility",
+				"body": "TuneSync requires iOS 18 or later. iPhone 13 and newer support full automatic vocal separation; iPhone 12 can prepare individual songs manually. iPhone 11 and earlier cannot create new separations, but cached karaoke tracks and existing recordings remain available."
 			},
 			"live": {
 				"title": "Live Activity",
 				"body": "Separation supports Live Activity — the Dynamic Island and lock screen show how far along the split is, so you don't have to stay in the app and wait."
+			}
+		},
+		"recordingStudio": {
+			"title": "Recording Studio",
+			"lead": "Trim karaoke takes against their real waveform, shape the sound, and keep an original you can always restore.",
+			"screenshot": "Recording Studio waveform trimming screen",
+			"open": {
+				"title": "How to open it",
+				"body": "After saving a karaoke take, choose Edit Recording. Or go to Settings → My Recordings, open a recording's menu, and choose edit."
+			},
+			"workflow": {
+				"title": "Editing workflow",
+				"step1": {
+					"title": "Choose the keep range on the waveform",
+					"body": "Drag the trim handles at either end of the timeline, or park the playhead and set it as the start or end. The final duration updates as you work."
+				},
+				"step2": {
+					"title": "Compare the original and edit",
+					"body": "Switch between Original and Edited, then use play, skip back or forward five seconds, and the timeline to check every cut and sound change."
+				},
+				"step3": {
+					"title": "Shape the sound",
+					"body": "Open Sound to adjust the master level and choose No Ambience, Studio, or Concert Hall room character."
+				},
+				"step4": {
+					"title": "Save or share",
+					"body": "Tap Save to render the edited version. Share the finished file directly, or restore the original from the More menu when you want a clean start."
+				}
+			},
+			"controls": {
+				"title": "Editing controls",
+				"timeline": "The waveform timeline shows the selected range, playhead, and final duration",
+				"preview": "Original / Edited A/B preview with five-second skip controls",
+				"history": "Undo and redo track trim and sound changes made in the current editing session",
+				"share": "Sharing uses the current effective version; save first to share the finished edit"
+			},
+			"nondestructive": {
+				"title": "Non-destructive by design",
+				"body": "Saving an edit never overwrites the original .m4a. TuneSync keeps the source and renders a separate edited copy, so you can revise it again or restore the original with one action."
+			},
+			"format": {
+				"title": "Files and storage",
+				"body": "Original and edited recordings stay in the app's local storage. The list marks edited takes and shows effective duration and total stored size; deleting a recording removes both its source and edited file."
 			}
 		},
 		"ai": {
@@ -618,21 +681,21 @@
 		},
 		"plus": {
 			"title": "TuneSync Plus",
-			"lead": "An optional subscription that unlocks the advanced audio and metadata features. The app is fully usable without it; Plus is for power users who want everything.",
+			"lead": "An optional subscription for advanced audio, lyrics, metadata, and discovery features. Core listening stays free.",
 			"overview": {
 				"title": "What Plus unlocks",
-				"body": "TuneSync Plus gates four capabilities that take extra on-device compute or extra scraping work:"
+				"body": "TuneSync Plus unlocks the advanced capabilities below. Some compute-heavy features also include a recurring free allowance:"
 			},
 			"features": {
 				"title": "Included with Plus",
 				"separation": "Vocal separation (Karaoke) — split a track into vocal and accompaniment on-device",
 				"lyrics": "Synced lyrics generation — let the app add timing to plain-text lyrics on-device",
 				"scraping": "Precise metadata scraping — slowest, most thorough scraping mode that checks every source",
-				"trends": "Trend discovery — multi-platform charts on the Home screen"
+				"trends": "Apple Music Trend Discovery — the current region's Top 10"
 			},
 			"free": {
 				"title": "What's free",
-				"body": "Everything else, including: connecting WebDAV / SMB / NFS / FTP servers, indexing and browsing your library, full playback with synced lyrics that already have timing, ShazamKit recognition, and one-off metadata refreshes."
+				"body": "Core listening stays free: WebDAV / SMB / NFS / FTP connections, indexing and browsing, background playback, existing synchronized lyrics, song recognition, and basic metadata organization. Vocal separation and synced-lyrics generation share two free uses per week; BPM and audio-feature analysis includes five per day. The app shows the current allowance and device eligibility."
 			},
 			"purchase": {
 				"title": "Purchasing",
