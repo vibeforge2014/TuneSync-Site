@@ -11,6 +11,7 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
  * For local dev or a custom-domain deploy, leave it unset (served from "/").
  */
 const basePath = process.env.BASE_PATH ?? "";
+const isStaticExport = process.env.CLOUDFLARE_PAGES === "true";
 
 const isSubPath = basePath.length > 0;
 
@@ -26,7 +27,7 @@ const nextConfig: NextConfig = {
   // `next dev` mis-detects the workspace root and fails to resolve routes.
   outputFileTracingRoot: path.resolve(__dirname),
   // Sub-path deploys (GitHub Pages) serve static files only.
-  output: isSubPath ? "export" : undefined,
+  output: isSubPath || isStaticExport ? "export" : undefined,
   basePath: isSubPath ? basePath : undefined,
   // Match GitHub Pages' directory-style URLs and let next-intl's locale
   // prefix resolve cleanly under the base path.
