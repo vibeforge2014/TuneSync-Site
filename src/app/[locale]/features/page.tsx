@@ -22,7 +22,7 @@ export default async function FeaturesPage({
       <FeatureRow
         eyebrow={t("library.title")} title={t("library.featureTitle")} description={t("library.featureDesc")}
         bullets={[t("library.featureB1"),t("library.featureB2"),t("library.featureB3"),t("library.featureB4")]}
-        screenshot={`${locale}/library.png`} screenshotLabel={t("library.screenshot")} icon={Server}
+        screenshot={`${locale}/media-sources.png`} screenshotLabel={t("library.screenshot")} icon={Server}
       />
       <FeatureRow
         eyebrow={t("player.title")} title={t("player.featureTitle")} description={t("player.featureDesc")}
@@ -46,8 +46,8 @@ export default async function FeaturesPage({
       />
       <FeatureRow
         eyebrow={t("metadata.title")} title={t("metadata.featureTitle")} description={t("metadata.featureDesc")}
-        bullets={[t("metadata.featureB1"),t("metadata.featureB2"),t("metadata.featureB3")]}
-        screenshot="metadata.png" screenshotLabel={t("metadata.screenshot")} icon={Wand2} reverse
+        bullets={[t("metadata.featureB1"),t("metadata.featureB2"),t("metadata.featureB3"),t("metadata.featureB4")]}
+        screenshot={`${locale}/metadata-mobile.png`} screenshotLabel={t("metadata.screenshot")} icon={Wand2} reverse
       />
       <FeatureRow
         eyebrow={t("discovery.title")} title={t("discovery.featureTitle")} description={t("discovery.featureDesc")}

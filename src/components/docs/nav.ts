@@ -14,6 +14,7 @@ export const DOC_NAV: DocNavGroup[] = [
 		items: [
 			{ href: '/docs', labelKey: 'docsNav.intro' },
 			{ href: '/docs/getting-started', labelKey: 'docsNav.gettingStarted' },
+			{ href: '/docs/technical-spec', labelKey: 'docsNav.technicalSpec' },
 		],
 	},
 	{

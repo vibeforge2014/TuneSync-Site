@@ -10,8 +10,8 @@
 		"backHome": "返回首页"
 	},
 	"meta": {
-		"title": "TuneSync — 个人音乐库、歌词与 K 歌录音",
-		"description": "连接 NAS 或本地文件夹，在 iPhone 上统一浏览、搜索与播放个人音乐库；补全元数据和歌词，分离人声，并在录音工作室中精修 K 歌作品。"
+		"title": "TuneSync — 私人音乐服务器、歌词与 K 歌录音",
+		"description": "在 iPhone 上连接 NAS、Plex、Jellyfin、Navidrome 等私人音乐来源，统一播放、补全元数据与歌词，并在设备端完成 K 歌和录音精修。"
 	},
 	"nav": {
 		"features": "功能特性",
@@ -25,17 +25,17 @@
 		"privacy": "隐私政策"
 	},
 	"home": {
-		"badge": "TuneSync 1.0.7 · 原生 iPhone 音乐 App",
-		"headline": "把你的音乐，<accent>集中到一处</accent>",
-		"subhead": "连接 NAS 与本地文件夹，统一浏览、搜索和播放个人曲库；补全元数据与歌词，把喜欢的歌变成伴奏，并在全新录音工作室中精修演唱。",
-		"introTitle": "让音乐不再分散在多个 App 之间。",
-		"introBody": "TuneSync 将服务器、文件夹与播放器整合在一起，连接后即可使用。",
+		"badge": "TuneSync 1.0.10 · 原生 iPhone 音乐 App",
+		"headline": "一个 App，<accent>接住所有私人音乐</accent>",
+		"subhead": "连接 WebDAV、SMB、Plex、Jellyfin、Navidrome、群晖等来源，把本地文件夹与媒体服务器汇成一个曲库；边听边补全封面、歌词和音频分析，再把喜欢的歌变成伴奏与自己的作品。",
+		"introTitle": "从文件共享到媒体服务器，一个入口就够了。",
+		"introBody": "TuneSync 统一连接、选库、同步、播放与整理流程。核心资料先到位，封面和分析在合适的网络中继续完成。",
 		"ctaPrimary": "开始使用",
 		"ctaSecondary": "查看功能",
 		"ctaDownload": "下载 iOS 版",
 		"downloadEyebrow": "下载",
 		"downloadTitle": "下载 TuneSync",
-		"downloadSubtitle": "在 iPhone 上连接音乐服务器与本地文件夹，统一管理曲库、歌词、K 歌和录音。目前提供 iPhone 版。",
+		"downloadSubtitle": "在 iPhone 上连接 NAS、Plex、Jellyfin、Navidrome 与本地文件夹，统一管理曲库、歌词、K 歌和录音。目前提供 iPhone 版。",
 		"downloadAvailable": "当前可用",
 		"downloadComingSoon": "暂未提供",
 		"downloadIOSAction": "立即开始",
@@ -90,23 +90,23 @@
 				"role": "SMB / NFS 连接"
 			}
 		},
-		"ctaTitle": "连接你的音乐，开始播放。",
-		"ctaBody": "参考快速上手指南连接一台服务器，几分钟即可完成。"
+		"ctaTitle": "选一个来源，把整个曲库带上。",
+		"ctaBody": "连接文件夹或媒体服务器，选择音乐库后即可同步并开始播放。"
 	},
 	"features": {
 		"title": "功能概览",
-		"subtitle": "从曲库管理、播放和歌词，到 K 歌与录音精修——集中在一个应用中。",
+		"subtitle": "从多来源曲库、渐进式元数据与播放，到歌词、K 歌和录音精修——集中在一个应用中。",
 		"pageTitle": "功能特性",
 		"library": {
 			"title": "曲库",
-			"desc": "连接 WebDAV / SMB / NFS / FTP 服务器，或导入本地文件夹，自动整理为一个曲库。",
-			"featureTitle": "在手机上访问 NAS 中的音乐",
-			"featureDesc": "处于同一局域网时，TuneSync 会自动发现媒体服务器，配置一次即可连接。可自行选择索引的文件夹，索引完成后即可播放。",
-			"featureB1": "WebDAV / SMB / NFS / FTP / DAAP 多协议",
-			"featureB2": "Bonjour 自动发现局域网服务器",
-			"featureB3": "文件夹级索引，只收录你选的目录",
-			"featureB4": "本地文件夹与远端服务器混合管理",
-			"screenshot": "曲库与服务器截图"
+			"desc": "连接文件共享、NAS 与主流自建媒体服务器，自动汇成一个曲库。",
+			"featureTitle": "把文件夹与媒体服务器，汇成一个曲库",
+			"featureDesc": "TuneSync 既能索引 WebDAV、SMB、FTP、NFS 与群晖 DSM 文件夹，也能直接同步 Plex、Jellyfin、Emby、Navidrome、Subsonic 和 Audio Station 的结构化音乐库。来源不同，浏览、搜索和播放体验保持一致。",
+			"featureB1": "本地 / WebDAV / FTP / SMB / NFS / Synology DSM",
+			"featureB2": "Plex / Jellyfin / Emby / Navidrome / Subsonic / Audio Station",
+			"featureB3": "统一选库、分页同步、稳定曲目 ID 与增量刷新",
+			"featureB4": "直连播放；来源支持时自动使用服务器转码与封面",
+			"screenshot": "TuneSync 支持的曲库来源"
 		},
 		"player": {
 			"title": "播放",
@@ -154,13 +154,14 @@
 		},
 		"metadata": {
 			"title": "元数据",
-			"desc": "自动补全封面、歌词、发行年份与曲目编号。",
-			"featureTitle": "一次性补齐封面、年份与歌词",
-			"featureDesc": "TuneSync 从 iTunes、MusicBrainz 等多个来源比对，补全缺失的封面、发行年份与曲目编号。支持单曲、专辑与整库批量处理，多个来源冲突时按你设定的权重决定取值。",
-			"featureB1": "iTunes / MusicBrainz / AI 多源比对",
-			"featureB2": "单曲 / 专辑 / 艺术家三级刷新 + 批量整理",
-			"featureB3": "来源权重与字段级「是否覆盖」策略",
-			"screenshot": "元数据截图"
+			"desc": "核心资料先可用，封面、发行信息与音频分析在后台渐进补全。",
+			"featureTitle": "曲库先能用，精细整理随后完成",
+			"featureDesc": "远程来源已有的歌名、歌手和专辑会立即进入曲库；缺少的发行信息、封面、AI 辅助与 BPM 分析进入持久化增强队列。TuneSync 会根据 Wi‑Fi、蜂窝网络和低数据模式自动决定当前能做多少工作。",
+			"featureB1": "快速 / 平衡 / 精准三种刮削模式",
+			"featureB2": "Wi‑Fi 全量增强；蜂窝与低数据模式只做轻量查询",
+			"featureB3": "可重试、可取消、重启后续跑的持久化队列",
+			"featureB4": "手工字段始终受保护，来源与修改历史可追溯",
+			"screenshot": "元数据渐进补全状态"
 		},
 		"discovery": {
 			"title": "发现",
@@ -185,6 +186,7 @@
 		"lyrics": "歌词",
 		"karaoke": "K 歌",
 		"recordingStudio": "录音工作室",
+		"technicalSpec": "技术规范",
 		"ai": "AI 助手",
 		"metadata": "元数据",
 		"discovery": "发现",
@@ -196,17 +198,78 @@
 	"docs": {
 		"intro": {
 			"title": "TuneSync 文档",
-			"lead": "逐页说明各项功能的使用方法。",
-			"body": "按使用流程组织：从连接服务器、整理曲库，到播放、查看歌词、伴唱，再到 AI 助手与元数据整理。每篇均包含操作步骤，可随时查阅。首次使用建议从「快速开始」阅读，几分钟即可开始播放。"
+			"lead": "从上手指南到技术规范，完整说明 TuneSync。",
+			"body": "文档按实际流程组织：选择曲库来源、同步与整理、播放和歌词、K 歌与录音，再到 AI 助手、系统设置与技术实现。首次使用建议从「快速开始」阅读；需要确认兼容性、网络策略或安全边界时，请查看「技术规范」。"
+		},
+		"technical": {
+			"title": "TuneSync 技术规范",
+			"lead": "面向部署、兼容性评估与高级使用的实现边界。",
+			"current": {
+				"title": "当前基线",
+				"body": "本页对应 TuneSync 1.0.10（Build 36），基于 2026 年 8 月 10 日的主工程与 iPhone 17 模拟器构建结果整理。"
+			},
+			"platform": {
+				"title": "平台与技术栈",
+				"app": { "k": "产品形态", "v": "原生 iPhone App；包含 Live Activity 扩展" },
+				"os": { "k": "系统要求", "v": "iOS 26.0 或更高版本" },
+				"stack": { "k": "界面与并发", "v": "SwiftUI、Observation、Swift 6 并发模型、async/await" },
+				"persistence": { "k": "本地数据", "v": "SwiftData 曲库与任务状态；文件系统缓存；Keychain 凭据" },
+				"extensions": { "k": "系统集成", "v": "ActivityKit、App Intents、Shortcuts、Siri、Spotlight、AirPlay 与后台音频" }
+			},
+			"architecture": {
+				"title": "架构",
+				"body": "TuneSync 将界面、来源适配、同步、元数据、播放和音频处理拆成独立层，以统一的曲目描述和播放资源连接不同服务器。",
+				"ui": "SwiftUI 负责界面；共享状态使用 Observation，并在主执行器上更新。",
+				"sources": "每种来源通过统一客户端能力模型暴露选库、分页、稳定 ID、直连、下载、转码和封面能力。",
+				"tasks": "索引、元数据增强、封面、BPM 与人声分离使用可取消的异步任务；持久化队列支持重启后恢复。",
+				"playback": "AVFoundation 播放本地或远程资源；来源可提供鉴权直连 URL 或服务器转码 URL。"
+			},
+			"sourceMatrix": {
+				"title": "来源兼容矩阵",
+				"files": { "k": "文件型来源", "v": "本地文件夹、WebDAV/WebDAVs、FTP/FTPS、SMB、NFS、Synology DSM" },
+				"servers": { "k": "媒体服务器", "v": "Plex、Jellyfin、Emby、Navidrome、Subsonic/OpenSubsonic、Synology Audio Station" },
+				"selection": { "k": "同步范围", "v": "文件来源按文件夹选择；媒体服务器按音乐库或集合选择" },
+				"delivery": { "k": "媒体交付", "v": "优先直连；来源声明支持时可使用转码、分页、远程封面与下载能力" }
+			},
+			"metadata": {
+				"title": "元数据管线",
+				"body": "同步流程把“曲库可用”和“完整增强”拆开，避免大型远程曲库因封面或分析任务阻塞。",
+				"core": "歌名、歌手、专辑、时长与服务器已有封面定位器优先写入，完成核心同步。",
+				"enrichment": "发行信息、高清封面、AI 辅助、BPM 与音频特征作为独立增强项排队。",
+				"budget": "离线时暂停；蜂窝或低数据模式执行轻量目录查询；Wi‑Fi/以太网允许封面、AI、远程媒体读取和音频分析。",
+				"provenance": "字段记录来源和历史；手工修改字段不会被自动增强覆盖。"
+			},
+			"security": {
+				"title": "安全与隐私",
+				"credentials": "服务器密码、设备令牌与 AI API Key 存储在系统 Keychain，不写入曲库数据库。",
+				"transport": "远程访问建议使用 HTTPS、VPN 或安全配置的反向代理；局域网发现只在当前本地网络中工作。",
+				"diagnostics": "本地生成的诊断报告排除密码与 API Key；界面和测试证据中对密码进行遮罩。",
+				"ai": "自带密钥模式会把请求直接发送到所选服务商或自托管端点；AI 为可选能力。"
+			},
+			"audio": {
+				"title": "音频、K 歌与录音",
+				"body": "播放、混音和录音基于 AVFoundation；人声分离与部分歌词处理在设备端运行。",
+				"formats": "播放器支持 MP3、FLAC、WAV、AAC、M4A、AIFF 与 Opus，最终可播性仍取决于 iOS 解码能力和服务器交付格式。",
+				"separation": "Core ML 的 MDX / DTTNet 管线将曲目分为人声与伴奏，并缓存可复用结果。",
+				"recording": "录音工作室以非破坏方式保存剪裁、音量、EQ、混响和渲染状态，保留原始录音。"
+			},
+			"system": {
+				"title": "后台与系统能力",
+				"body": "TuneSync 支持后台音频、锁屏播放信息、播放队列、AirPlay、睡眠定时；索引、元数据和人声分离可显示后台任务状态与 Live Activity，并通过 App Intents 暴露播放和识曲等操作。"
+			},
+			"limits": {
+				"title": "边界与依赖",
+				"body": "服务器实际能力、转码格式和鉴权方式以对应产品版本与配置为准；远程访问质量取决于网络、证书与服务器性能。人声分离、录音和语音识别需要受支持的设备资源及相应系统权限。"
+			}
 		},
 		"gettingStarted": {
 			"title": "快速开始",
-			"lead": "首次使用时，按四步引导将音乐导入。",
+			"lead": "选择文件来源或媒体服务器，四步完成首次曲库同步。",
 			"shotWelcome": "欢迎引导截图",
 			"shotHint": "替换为真实截图：public/screenshots/getting-started.png",
 			"overview": {
 				"title": "整体流程",
-				"body": "首次启动会依次展示四页引导——欢迎、连接服务器、添加曲库、精修（封面、歌词、伴唱），每页说明一个步骤。随后进入设置向导，将剩余事项（已连接的服务器数量、文件夹数量、曲目数量、待整理数量）以清单形式逐一跟踪。"
+				"body": "首次启动会依次介绍连接来源、选择同步范围、建立曲库与后续精修。统一的「资料库来源与索引」页面会显示服务器、文件夹、本地与远程曲目数量，并集中提供刷新、选库和索引状态。"
 			},
 			"guide": {
 				"title": "四步引导"
@@ -217,11 +280,11 @@
 			},
 			"step2": {
 				"title": "连服务器",
-				"body": "支持 WebDAV、SMB、NFS、FTP。先连接一台服务器，再向其中添加文件夹。可在同一位置管理所有服务器的状态与连通性，配置完成后即可使用。"
+				"body": "文件型来源可选 WebDAV、SMB、NFS、FTP 或 Synology DSM；媒体服务器可选 Plex、Jellyfin、Emby、Navidrome、Subsonic 或 Audio Station。按来源填写地址、登录或授权信息即可。"
 			},
 			"step3": {
 				"title": "添加曲库",
-				"body": "仅添加需要收听的文件夹。添加完成后即可播放，TuneSync 会同步为这些内容补全封面与歌词。"
+				"body": "文件来源只选择需要索引的文件夹；媒体服务器选择音乐库或集合。核心资料同步完成后即可浏览和播放，封面、发行信息与分析在后台继续。"
 			},
 			"step4": {
 				"title": "精修",
@@ -234,7 +297,7 @@
 			"permissions": {
 				"title": "会用到的权限",
 				"body": "用到哪个才问哪个：",
-				"localNetwork": "本地网络——找局域网里的 WebDAV / FTP / SMB / NFS 服务器",
+				"localNetwork": "本地网络——发现局域网里的 WebDAV、FTP、SMB、NFS、NAS 与媒体服务器",
 				"microphone": "麦克风——识曲（听周围在放什么歌）和 K 歌录音要用",
 				"speech": "语音识别——在本机把人声转成文字，给纯歌词加时间轴",
 				"applemusic": "Apple Music——为了能在后台放歌"
@@ -246,17 +309,25 @@
 		},
 		"library": {
 			"title": "曲库",
-			"lead": "将本地文件夹与远程服务器整合为一个曲库。",
+			"lead": "将本地文件夹、网络共享与自建媒体服务器整合为一个曲库。",
 			"shotLibrary": "曲库截图",
 			"shotHint": "替换为真实截图：public/screenshots/library.png",
 			"protocols": {
-				"title": "支持的网络协议",
-				"body": "能连这些协议，自建服务器或 NAS 都行：",
+				"title": "文件型来源",
+				"body": "按目录浏览并索引文件，适合 NAS 共享和通用文件服务器：",
 				"webdav": "WebDAV——最常见，自建基本都用它，也支持加密的 WebDAVs",
 				"smb": "SMB——Windows 共享和大多数 NAS 默认开的协议，连群晖、威联通这些常用它",
 				"nfs": "NFS——Linux 和 NAS 上常见的网络文件系统，速度快",
 				"ftp": "FTP / FTPS——老牌文件传输，FTPS 是加密版",
-				"daap": "DAAP——iTunes 的音乐共享协议"
+				"synology": "通过群晖 Web API 浏览共享文件夹，支持 DSM 登录与两步验证流程"
+			},
+			"mediaServers": {
+				"title": "结构化媒体服务器",
+				"body": "直接同步服务器已有的音乐库结构、元数据与封面，无需把每个文件当作普通目录重新解析：",
+				"plex": "支持 Plex 账号授权、服务器选择、音乐库同步、直连与服务器转码",
+				"mediaBrowser": "Jellyfin 与 Emby 共享统一的媒体库适配层，支持分页、封面与稳定曲目 ID",
+				"openSubsonic": "Navidrome 与 Subsonic/OpenSubsonic 支持音乐库选择、分页、直连、转码和封面",
+				"audioStation": "通过 Synology Audio Station API 同步音乐库、封面并生成鉴权播放地址"
 			},
 			"connect": {
 				"title": "连一台服务器",
@@ -266,27 +337,27 @@
 				},
 				"step2": {
 					"title": "选协议、填地址",
-					"body": "挑 WebDAV / SMB / NFS / FTP，填地址、端口和共享路径。不确定通不通可以先「测试连接」。"
+					"body": "选择文件协议或媒体服务器。文件来源填写地址、端口与路径；媒体服务器按页面登录、快速连接或账号授权。"
 				},
 				"step3": {
 					"title": "填账号、保存",
-					"body": "要账号密码就填，保存后这台服务器就出现在列表里，状态是已连接。"
+					"body": "保存后先测试连接并选择服务器上的文件夹、音乐库或集合；凭据与设备令牌保存在系统 Keychain。"
 				},
 				"step4": {
 					"title": "挑要索引的文件夹",
-					"body": "浏览服务器上的目录，只勾你想听的文件夹。加完就能播。"
+					"body": "提交选择后开始同步。核心曲目资料就绪即可浏览和播放，封面与分析会按网络条件在后台继续。"
 				}
 			},
 			"shotHintNote": "",
 			"discover": {
 				"title": "Bonjour 自动发现",
-				"body": "同一局域网里，TuneSync 会自动找到 _webdav._tcp、_smb._tcp、_ftp._tcp、_nfs._tcp 这些服务，直接进连接配置，不用手敲地址。"
+				"body": "同一局域网里，TuneSync 会自动查找 WebDAV、SMB、FTP 与 NFS 服务；部分媒体服务器还支持快速连接或账号授权。互联网访问请使用 HTTPS、VPN 或安全配置的反向代理。"
 			},
 			"connectStep": {},
 			"indexing": {
 				"title": "索引",
-				"body": "加好文件夹后，TuneSync 会扫里面的音频文件（mp3、flac、m4a、wav 等），读每个文件内嵌的信息（歌名、歌手、专辑、封面），搭出曲库结构。扫完就能播，不用等全部读完。后台跑着，首页和「设置 → 后台任务与日志」能看到进度——比如扫到第几首、还剩多少。",
-				"note": "仅索引所选文件夹，不会纳入整块磁盘的内容。文件夹后续新增歌曲时，下次启动会自动增量扫描，无需整体重建。"
+				"body": "文件型来源扫描所选目录并读取音频标签；媒体服务器直接分页同步其结构化曲目、专辑和封面定位。两类来源都会映射为同一套 TuneSync 曲库模型。核心资料先写入，增强任务随后排队，因此大型远程曲库无需等待全部封面和分析完成。",
+				"note": "同步范围严格限制在你选择的文件夹、音乐库或集合。后续刷新会按稳定 ID、版本与修改时间增量更新，并在后台任务页显示进度和结果。"
 			},
 			"playlists": {
 				"title": "播放列表和收藏",
@@ -552,9 +623,28 @@
 		},
 		"metadata": {
 			"title": "元数据",
-			"lead": "从多个来源比对，补全封面、歌词与曲目信息，使曲库保持整洁。",
+			"lead": "核心资料先可用，再按网络与刮削模式渐进补全封面、发行信息、歌词与音频分析。",
 			"shotMetadata": "元数据截图",
 			"shotHint": "替换为真实截图：public/screenshots/metadata.png",
+			"modes": {
+				"title": "三种刮削模式",
+				"body": "模式决定同步时接纳来源资料还是继续查询外部目录，以及会排入哪些增强任务。",
+				"fast": { "k": "快速", "v": "直接采用来源核心资料，不排入额外增强；适合已经整理好的服务器" },
+				"balanced": { "k": "平衡", "v": "核心资料完整时立即接纳，只补缺少的发行信息与可用封面" },
+				"precise": { "k": "精准", "v": "继续多源查询，并排入发行信息、封面、AI 辅助与音频分析" }
+			},
+			"progressive": {
+				"title": "渐进式增强",
+				"body": "TuneSync 将同步分成核心资料与独立增强，避免大型曲库被高清封面或音频分析拖慢。",
+				"core": "歌名、歌手、专辑、时长等核心字段先进入曲库并可立即播放",
+				"deferred": "封面、发行信息、AI 情绪特征、BPM 与音频分析独立排队和重试",
+				"network": "蜂窝或低数据模式仅执行轻量目录查询；Wi‑Fi/以太网恢复全量增强",
+				"resume": "增强状态持久化，取消、暂时失败或重启后均可继续"
+			},
+			"manualProtection": {
+				"title": "手工字段优先",
+				"body": "自动增强不会覆盖你手动修改的歌名、歌手、专辑、年份、封面、BPM 等字段；每个字段的来源与历史仍可查看和回滚。"
+			},
 			"sources": {
 				"title": "来源",
 				"body": "TuneSync 从这几个来源取信息，然后比对、挑最好的：",
@@ -587,7 +677,7 @@
 			},
 			"batch": {
 				"title": "批量整理",
-				"body": "整库批量刷也行——一次把所有缺信息的歌都补了。后台任务中心盯着进度，能看跑了多少、失败多少。应用策略可选：「标准」、「只刷元数据（不动封面）」、「批量把封面落盘（省内存）」。还能挑刮削模式——快速 / 平衡 / 精准；越精准越慢，但会查更多来源，对难匹配的文件效果更好。"
+				"body": "整库批量整理会把核心刮削和增强队列分别统计。后台任务中心显示已完成、待处理、失败与增强剩余数量；可停止当前批次、单独重试失败项，或等待 Wi‑Fi 后继续封面、AI、BPM 与音频分析。"
 			},
 			"history": {
 				"title": "历史和回滚",
@@ -695,7 +785,7 @@
 			},
 			"free": {
 				"title": "免费部分",
-				"body": "核心播放永久免费，包括连接 WebDAV / SMB / NFS / FTP、索引与浏览曲库、后台播放、已有同步歌词、识曲与基础元数据整理。人声分离与同步歌词生成共享每周 2 次免费额度，BPM 与音频特征分析每天 5 次；额度与设备兼容性以 App 内显示为准。"
+				"body": "核心播放永久免费，包括连接本地文件夹、WebDAV / SMB / NFS / FTP / Synology DSM，以及 Plex、Jellyfin、Emby、Navidrome、Subsonic 与 Audio Station；还包括曲库同步、后台播放、已有同步歌词、识曲和基础元数据整理。人声分离与同步歌词生成共享每周 2 次免费额度，BPM 与音频特征分析每天 5 次；额度与设备兼容性以 App 内显示为准。"
 			},
 			"purchase": {
 				"title": "购买",
@@ -713,7 +803,7 @@
 	},
 	"privacy": {
 		"title": "隐私政策",
-		"lastUpdated": "最后更新：2026 年 7 月 5 日",
+		"lastUpdated": "最后更新：2026 年 8 月 10 日",
 		"intro": "TuneSync 以隐私为核心设计理念。本政策说明我们收集的数据及其使用方式。",
 		"noCollection": {
 			"title": "我们不收集的数据",
@@ -724,20 +814,20 @@
 		},
 		"onDevice": {
 			"title": "存储在您设备上的数据",
-			"body": "以下数据仅存储在您的设备本地，永远不会发送到我们的服务器：",
+			"body": "以下数据保存在您的设备上，不会发送到 TuneSync 自有服务器；当您主动使用元数据、歌词或 AI 服务时，相关查询会直接发送给所选第三方服务商：",
 			"p1": "您的音乐库索引（歌曲名称、艺术家、专辑名称、文件路径）。",
 			"p2": "为您的歌曲获取的专辑封面和元数据。",
 			"p3": "播放期间下载或生成的歌词。",
 			"p4": "您创建的 K 歌录音（仅在您选择保存时存储）。",
 			"p5": "应用设置和偏好。",
-			"footer": "这些数据保留在您的设备上，您可以随时通过删除应用或在设置中清除数据来删除它们。"
+			"footer": "您可以在 App 内清理缓存、录音与来源，或删除 App 容器中的曲库数据；删除一个来源时，TuneSync 也会移除与该来源关联的安全凭据。"
 		},
 		"permissions": {
 			"title": "权限",
 			"body": "TuneSync 请求以下权限：",
-			"mic": "麦克风：仅在您使用唱歌/K 歌模式录音时使用。录音在您的设备本地处理。",
-			"speech": "语音识别：用于歌曲识别功能。音频在设备上或由系统语音框架处理。",
-			"network": "本地网络：用于发现在您的本地网络上的 WebDAV 媒体服务器并连接。",
+			"mic": "麦克风：用于听歌识曲和 K 歌录音；仅在您主动进入相应功能时请求，录音作品保存在设备本地。",
+			"speech": "语音识别：用于在设备端把人声转写为文本，为纯文本歌词生成时间轴。",
+			"network": "本地网络：用于发现并连接当前局域网中的 WebDAV、SMB、FTP、NFS、NAS 与媒体服务器。",
 			"music": "Apple Music：在您选择使用该功能时，用于从 Apple Music 资料库导入封面和元数据。"
 		},
 		"ai": {
@@ -749,8 +839,8 @@
 			"body": "TuneSync 提供可选的 TuneSync Plus 订阅，解锁人声分离、同步歌词生成、精准元数据刮削和潮汐发现功能。订阅全程由 Apple App Store 通过 StoreKit 处理。我们无法看到、存储或处理您的支付信息——Apple 只会告诉我们您当前是否拥有有效的订阅状态。您可随时在「系统设置 → Apple ID → 订阅」中管理或取消订阅。"
 		},
 		"webdav": {
-			"title": "WebDAV 连接",
-			"body": "如果您将 TuneSync 连接到 WebDAV 服务器，您的凭据将安全存储在设备钥匙串中，仅用于访问该服务器上的媒体文件。我们无法访问您的 WebDAV 凭据。"
+			"title": "远程来源凭据",
+			"body": "服务器密码、设备令牌与 AI API Key 存储在设备 Keychain 中，仅用于访问您配置的来源或服务商，不写入曲库数据库和本地诊断报告。TuneSync 不运营中转这些凭据或媒体内容的自有服务器。"
 		},
 		"children": {
 			"title": "儿童隐私",
@@ -758,7 +848,7 @@
 		},
 		"rights": {
 			"title": "您的权利",
-			"body": "由于所有数据都存储在您的设备本地，您拥有完全控制权。卸载应用会立即删除所有相关数据。"
+			"body": "您可以在 App 内管理来源、曲库、缓存和录音。卸载 App 会删除其应用容器数据；删除来源时会移除对应的 Keychain 凭据。第三方服务商已接收的数据受其各自隐私政策约束。"
 		},
 		"changes": {
 			"title": "政策变更",
@@ -781,15 +871,15 @@
 		"faq": {
 			"title": "常见问题",
 			"q1": "如何将音乐添加到 TuneSync？",
-			"a1": "TuneSync 与您自己的音乐库配合使用。您可以从文件应用导入音频文件，或通过设置 > 网络发现连接到 WebDAV/NAS 服务器。应用支持 MP3、FLAC、M4A 等常见音频格式。",
+			"a1": "TuneSync 与您自己的音乐库配合使用。可导入本地文件夹，连接 WebDAV、SMB、FTP、NFS 或 Synology DSM，也可同步 Plex、Jellyfin、Emby、Navidrome、Subsonic 和 Audio Station。进入「设置 → 资料库来源与索引」即可添加来源。",
 			"q2": "TuneSync 需要联网吗？",
-			"a2": "核心播放功能可离线使用。下载专辑封面、歌词和元数据，或使用可选的 AI 功能时需要网络连接。",
+			"a2": "已在本机的音乐和缓存内容可离线播放；远程串流、同步与在线元数据需要网络。蜂窝或低数据模式会自动限制为轻量查询，封面、AI、BPM 与音频分析可等待 Wi‑Fi。",
 			"q3": "唱歌/K 歌模式如何工作？",
-			"a3": "播放歌曲时，点按唱歌/麦克风按钮。授予麦克风权限后，TuneSync 将显示同步歌词并录制与伴奏混合的人声。录音仅保存在您的设备本地。",
+			"a3": "播放歌曲时进入 K 歌，TuneSync 会先在设备端把曲目分离为人声与伴奏。准备完成后可调整原唱比例并录音；作品保存在本机，还可进入录音工作室进行非破坏式裁剪、调音和分享。",
 			"q4": "我的数据隐私吗？",
 			"a4": "是的。TuneSync 本地优先，不收集您的个人数据。详情请参阅我们的隐私政策。",
 			"q5": "支持哪些设备？",
-			"a5": "TuneSync 需要 iOS 18 或更高版本，已针对 iPhone 优化。"
+			"a5": "TuneSync 1.0.10 需要 iOS 26.0 或更高版本，当前产品形态为原生 iPhone App。"
 		},
 		"resources": {
 			"title": "使用文档",
