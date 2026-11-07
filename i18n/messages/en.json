@@ -10,8 +10,8 @@
 		"backHome": "Back to home"
 	},
 	"meta": {
-		"title": "TuneSync — Personal music servers, lyrics & karaoke",
-		"description": "Connect NAS folders, Plex, Jellyfin, Navidrome, and other personal music sources on iPhone. Play one library, enrich metadata and lyrics, and create karaoke recordings on-device."
+		"title": "TuneSync — Personal music, lyrics & karaoke recording",
+		"description": "Connect a NAS or local folders, then browse, search, and play one personal library on iPhone. Enrich metadata and lyrics, separate vocals, and polish karaoke takes in Recording Studio."
 	},
 	"nav": {
 		"features": "Features",
@@ -25,17 +25,17 @@
 		"privacy": "Privacy"
 	},
 	"home": {
-		"badge": "TuneSync 1.0.10 · Native music for iPhone",
-		"headline": "One app for <accent>all your private music</accent>",
-		"subhead": "Connect WebDAV, SMB, Plex, Jellyfin, Navidrome, Synology, and more. TuneSync turns folders and media servers into one library, enriches artwork and lyrics as you listen, and transforms favorite tracks into accompaniment and recordings.",
-		"introTitle": "From file shares to media servers, one front door is enough.",
-		"introBody": "TuneSync unifies connection, library selection, sync, playback, and cleanup. Core metadata arrives first; artwork and analysis continue when the network is right.",
+		"badge": "TuneSync 1.0.7 · Native music for iPhone",
+		"headline": "Your music, <accent>all in one place</accent>",
+		"subhead": "Connect a NAS and local folders, then browse, search, and play one personal library. Enrich metadata and lyrics, turn favorite tracks into accompaniment, and polish your takes in the new Recording Studio.",
+		"introTitle": "Music shouldn't be spread across half a dozen apps.",
+		"introBody": "TuneSync brings your servers, folders, and player together. Connect once and you're ready.",
 		"ctaPrimary": "Get started",
 		"ctaSecondary": "See features",
 		"ctaDownload": "Download for iOS",
 		"downloadEyebrow": "Download",
 		"downloadTitle": "Download TuneSync",
-		"downloadSubtitle": "Connect NAS folders, Plex, Jellyfin, Navidrome, and local files on iPhone, then manage your library, lyrics, karaoke, and recordings in one place.",
+		"downloadSubtitle": "Connect music servers and local folders on iPhone, then manage your library, lyrics, karaoke, and recordings in one place. TuneSync is currently available for iPhone.",
 		"downloadAvailable": "Available now",
 		"downloadComingSoon": "Unavailable",
 		"downloadIOSAction": "Get started",
@@ -90,23 +90,23 @@
 				"role": "SMB / NFS connection"
 			}
 		},
-		"ctaTitle": "Choose a source. Bring the whole library.",
-		"ctaBody": "Connect a folder or media server, choose its music library, and start syncing and listening."
+		"ctaTitle": "Connect your music and start listening.",
+		"ctaBody": "Follow the quick-start guide to link a server — it only takes a few minutes."
 	},
 	"features": {
 		"title": "Features",
-		"subtitle": "Multi-source library, progressive metadata, playback, lyrics, karaoke, and recording polish — together in one app.",
+		"subtitle": "Library, playback, lyrics, karaoke, and recording polish — together in one app.",
 		"pageTitle": "Features",
 		"library": {
 			"title": "Library",
-			"desc": "Connect file shares, NAS devices, and popular self-hosted media servers as one library.",
-			"featureTitle": "Bring folders and media servers into one library",
-			"featureDesc": "TuneSync can index WebDAV, SMB, FTP, NFS, and Synology DSM folders, or sync the structured music libraries already managed by Plex, Jellyfin, Emby, Navidrome, Subsonic, and Audio Station. Different sources, one browsing and playback experience.",
-			"featureB1": "Local / WebDAV / FTP / SMB / NFS / Synology DSM",
-			"featureB2": "Plex / Jellyfin / Emby / Navidrome / Subsonic / Audio Station",
-			"featureB3": "Unified library selection, paged sync, stable track IDs, and incremental refresh",
-			"featureB4": "Direct play, plus server transcoding and artwork where supported",
-			"screenshot": "Music sources supported by TuneSync"
+			"desc": "Connect WebDAV / SMB / NFS / FTP servers, or import local folders. TuneSync builds one library.",
+			"featureTitle": "Access your NAS music on your phone",
+			"featureDesc": "On the same network, TuneSync automatically discovers your media server — configure once and you're connected. Choose which folders to index; playback begins as soon as indexing completes.",
+			"featureB1": "WebDAV / SMB / NFS / FTP / DAAP protocols",
+			"featureB2": "Bonjour auto-discovery of LAN servers",
+			"featureB3": "Folder-level indexing — only what you choose",
+			"featureB4": "Mix local folders and remote servers in one library",
+			"screenshot": "Library screenshot"
 		},
 		"player": {
 			"title": "Playback",
@@ -154,14 +154,13 @@
 		},
 		"metadata": {
 			"title": "Metadata",
-			"desc": "Use core metadata immediately, then enrich artwork, release data, and audio analysis in the background.",
-			"featureTitle": "Use the library now. Let the details finish behind it.",
-			"featureDesc": "Titles, artists, and albums supplied by a remote source appear immediately. Missing release data, artwork, AI assistance, BPM, and audio analysis enter a durable enhancement queue. TuneSync automatically scales work for Wi-Fi, cellular, and Low Data Mode.",
-			"featureB1": "Fast / Balanced / Precise scraping modes",
-			"featureB2": "Full enrichment on Wi-Fi; lightweight lookups on cellular and Low Data Mode",
-			"featureB3": "Durable queues that retry, cancel safely, and resume after relaunch",
-			"featureB4": "Manual fields stay protected with source and change history",
-			"screenshot": "Progressive metadata enrichment status"
+			"desc": "Auto-fill artwork, lyrics, release year, and track numbers.",
+			"featureTitle": "Fill in artwork, year, and lyrics in one pass",
+			"featureDesc": "TuneSync compares across iTunes, MusicBrainz, and other sources to fill in missing artwork, release years, and track numbers. Works per track, per album, or across the whole library. When sources conflict, your configured weights decide.",
+			"featureB1": "iTunes / MusicBrainz / AI multi-source matching",
+			"featureB2": "Track / album / artist refresh + batch organizing",
+			"featureB3": "Source weights and per-field “overwrite” policies",
+			"screenshot": "Metadata screenshot"
 		},
 		"discovery": {
 			"title": "Discover",
@@ -186,7 +185,6 @@
 		"lyrics": "Lyrics",
 		"karaoke": "Karaoke",
 		"recordingStudio": "Recording Studio",
-		"technicalSpec": "Technical specification",
 		"ai": "AI assistant",
 		"metadata": "Metadata",
 		"discovery": "Discovery",
@@ -198,78 +196,17 @@
 	"docs": {
 		"intro": {
 			"title": "TuneSync docs",
-			"lead": "From first sync to the full technical specification.",
-			"body": "The docs follow the real workflow: choose a source, sync and organize, play and follow lyrics, sing and record, then configure AI and system behavior. Start with Getting started. For compatibility, network policy, security, and implementation boundaries, read Technical specification."
-		},
-		"technical": {
-			"title": "TuneSync technical specification",
-			"lead": "Implementation boundaries for deployment, compatibility review, and advanced use.",
-			"current": {
-				"title": "Current baseline",
-				"body": "This page describes TuneSync 1.0.10 (Build 36), based on the main project and an iPhone 17 Simulator build verified on August 10, 2026."
-			},
-			"platform": {
-				"title": "Platform and stack",
-				"app": { "k": "Product", "v": "Native iPhone app with a Live Activity extension" },
-				"os": { "k": "System requirement", "v": "iOS 26.0 or later" },
-				"stack": { "k": "UI and concurrency", "v": "SwiftUI, Observation, Swift 6 concurrency, and async/await" },
-				"persistence": { "k": "Local data", "v": "SwiftData library and task state, filesystem caches, and Keychain credentials" },
-				"extensions": { "k": "System integration", "v": "ActivityKit, App Intents, Shortcuts, Siri, Spotlight, AirPlay, and background audio" }
-			},
-			"architecture": {
-				"title": "Architecture",
-				"body": "TuneSync separates UI, source adapters, synchronization, metadata, playback, and audio processing, connecting different servers through a unified track descriptor and playback resource.",
-				"ui": "SwiftUI renders the interface; shared state uses Observation and updates on the main actor.",
-				"sources": "A unified client capability model exposes library selection, pagination, stable IDs, direct play, download, transcoding, and artwork per source.",
-				"tasks": "Indexing, metadata enrichment, artwork, BPM, and vocal separation run as cancellable async work; durable queues resume after relaunch.",
-				"playback": "AVFoundation plays local or remote resources; sources may provide authenticated direct-play or server-transcoded URLs."
-			},
-			"sourceMatrix": {
-				"title": "Source compatibility matrix",
-				"files": { "k": "File sources", "v": "Local folders, WebDAV/WebDAVs, FTP/FTPS, SMB, NFS, and Synology DSM" },
-				"servers": { "k": "Media servers", "v": "Plex, Jellyfin, Emby, Navidrome, Subsonic/OpenSubsonic, and Synology Audio Station" },
-				"selection": { "k": "Sync scope", "v": "Folders for file sources; music libraries or collections for media servers" },
-				"delivery": { "k": "Media delivery", "v": "Direct play first; transcoding, pagination, remote artwork, and downloads when declared by the source" }
-			},
-			"metadata": {
-				"title": "Metadata pipeline",
-				"body": "Synchronization separates library readiness from full enrichment so large remote libraries are not blocked by artwork or analysis.",
-				"core": "Title, artist, album, duration, and server-provided artwork locators are written first to complete the core sync.",
-				"enrichment": "Release information, high-resolution artwork, AI assistance, BPM, and audio features are queued as independent enhancements.",
-				"budget": "Offline pauses work; cellular or Low Data Mode permits lightweight catalog lookups; Wi-Fi or Ethernet enables artwork, AI, remote media reads, and audio analysis.",
-				"provenance": "Fields retain source and history; automatic enrichment never overwrites a manual edit."
-			},
-			"security": {
-				"title": "Security and privacy",
-				"credentials": "Server passwords, device tokens, and AI API keys are stored in the system Keychain rather than the library database.",
-				"transport": "Use HTTPS, a VPN, or a securely configured reverse proxy for remote access. LAN discovery is limited to the current local network.",
-				"diagnostics": "Locally generated diagnostic reports exclude passwords and API keys; credential fields remain masked in UI and test evidence.",
-				"ai": "Bring-your-own-key requests go directly to the selected provider or self-hosted endpoint. AI features are optional."
-			},
-			"audio": {
-				"title": "Audio, karaoke, and recording",
-				"body": "Playback, mixing, and recording use AVFoundation. Vocal separation and parts of the lyrics workflow run on-device.",
-				"formats": "Playback supports MP3, FLAC, WAV, AAC, M4A, AIFF, and Opus; final compatibility still depends on iOS decoding and the server's delivery format.",
-				"separation": "Core ML MDX / DTTNet pipelines split a track into vocal and accompaniment stems and cache reusable results.",
-				"recording": "Recording Studio stores trim, gain, EQ, reverb, and render state non-destructively while retaining the original take."
-			},
-			"system": {
-				"title": "Background and system capabilities",
-				"body": "TuneSync supports background audio, lock-screen now playing, queues, AirPlay, and sleep timers. Indexing, metadata, and separation can surface task state and Live Activities, while App Intents expose playback and recognition actions."
-			},
-			"limits": {
-				"title": "Boundaries and dependencies",
-				"body": "Actual server capabilities, transcoding formats, and authentication methods depend on the server version and configuration. Remote reliability depends on network, certificates, and server performance. Separation, recording, and speech recognition require supported device resources and system permissions."
-			}
+			"lead": "How to use each feature, page by page.",
+			"body": "Organized by workflow: connecting a server, building a library, then playback, lyrics, singing along, and finally the AI assistant and metadata. Each page includes step-by-step instructions for reference at any time. New users should start with Getting started — playback can begin within a few minutes."
 		},
 		"gettingStarted": {
 			"title": "Getting started",
-			"lead": "Choose a file source or media server and complete the first library sync in four steps.",
+			"lead": "On first use, follow the four-step guide to import your music.",
 			"shotWelcome": "Welcome guide screenshot",
 			"shotHint": "Replace with a real screenshot: public/screenshots/getting-started.png",
 			"overview": {
 				"title": "The overall flow",
-				"body": "First launch introduces source connection, sync scope, library creation, and later enrichment. The unified Library Sources & Indexing page shows servers, folders, local and remote track counts, and brings refresh, selection, and indexing status together."
+				"body": "First launch walks you through four pages — welcome, connect a server, add your library, polish (artwork, lyrics, karaoke) — each explaining one step. Then it drops you into a setup wizard that tracks the rest (how many servers, folders, tracks, pending items) as a checklist."
 			},
 			"guide": {
 				"title": "The four steps"
@@ -280,11 +217,11 @@
 			},
 			"step2": {
 				"title": "Connect servers",
-				"body": "Choose WebDAV, SMB, NFS, FTP, or Synology DSM for file-based sources. Choose Plex, Jellyfin, Emby, Navidrome, Subsonic, or Audio Station for media servers. Enter the address, sign in, or authorize the account as requested."
+				"body": "Supports WebDAV, SMB, NFS, FTP. Connect a server first, then add folders to it. Manage every server's status and test connectivity in one place — once configured, it is ready to use, without switching between discovery and connection."
 			},
 			"step3": {
 				"title": "Add your library",
-				"body": "For file sources, select only the folders to index. For media servers, select a music library or collection. Browse and play as soon as core metadata arrives; artwork, release data, and analysis continue in the background."
+				"body": "Add only the folders you want to hear. Once added it plays, and TuneSync fills in artwork and lyrics along the way."
 			},
 			"step4": {
 				"title": "Polish",
@@ -297,7 +234,7 @@
 			"permissions": {
 				"title": "Permissions you'll be asked for",
 				"body": "Only when you use the thing that needs it:",
-				"localNetwork": "Local network — to discover LAN WebDAV, FTP, SMB, NFS, NAS, and media servers",
+				"localNetwork": "Local network — to find LAN WebDAV / FTP / SMB / NFS servers",
 				"microphone": "Microphone — used for song recognition (identifying music playing nearby) and karaoke recording",
 				"speech": "Speech recognition — transcribes the vocal on-device to add timing to plain lyrics",
 				"applemusic": "Apple Music — so playback can continue in the background"
@@ -309,25 +246,17 @@
 		},
 		"library": {
 			"title": "Library",
-			"lead": "Combine local folders, network shares, and self-hosted media servers into a single library.",
+			"lead": "Combine local folders and remote servers into a single library.",
 			"shotLibrary": "Library screenshot",
 			"shotHint": "Replace with a real screenshot: public/screenshots/library.png",
 			"protocols": {
-				"title": "File-based sources",
-				"body": "Browse and index by directory, ideal for NAS shares and general file servers:",
+				"title": "Supported protocols",
+				"body": "Connects over these protocols — self-hosted servers or a NAS:",
 				"webdav": "WebDAV — the most common for self-hosting; also supports encrypted WebDAVs",
 				"smb": "SMB — Windows sharing and most NAS defaults; common for Synology, QNAP, etc.",
 				"nfs": "NFS — common network filesystem on Linux and NAS, fast",
 				"ftp": "FTP / FTPS — classic file transfer; FTPS is the encrypted variant",
-				"synology": "Browse shared folders through Synology Web APIs with DSM login and two-factor authentication flows"
-			},
-			"mediaServers": {
-				"title": "Structured media servers",
-				"body": "Sync the server's existing library structure, metadata, and artwork instead of re-parsing every item as a generic file:",
-				"plex": "Plex account authorization, server selection, music-library sync, direct play, and server transcoding",
-				"mediaBrowser": "Jellyfin and Emby share a MediaBrowser adapter with pagination, artwork, and stable track IDs",
-				"openSubsonic": "Navidrome and Subsonic/OpenSubsonic support library selection, pagination, direct play, transcoding, and artwork",
-				"audioStation": "Synology Audio Station API syncs music and artwork and generates authenticated playback URLs"
+				"daap": "DAAP — iTunes music sharing protocol"
 			},
 			"connect": {
 				"title": "Connect a server",
@@ -337,27 +266,27 @@
 				},
 				"step2": {
 					"title": "Pick a protocol, enter the address",
-					"body": "Choose a file protocol or media server. File sources use address, port, and path; media servers guide you through sign-in, quick connect, or account authorization."
+					"body": "Choose WebDAV / SMB / NFS / FTP, then the address, port, and share path. Not sure it's reachable? Hit “Test Connection” first."
 				},
 				"step3": {
 					"title": "Enter credentials, save",
-					"body": "Test the connection, then select a folder, music library, or collection. Credentials and device tokens are stored in the system Keychain."
+					"body": "Add username and password if it needs them. After saving, the server shows up in the list as connected."
 				},
 				"step4": {
 					"title": "Pick folders to index",
-					"body": "Submit the selection to sync. Browse and play once core metadata is ready; artwork and analysis continue in the background according to network conditions."
+					"body": "Browse the server and check only the folders you want. Plays as soon as it's done."
 				}
 			},
 			"shotHintNote": "",
 			"discover": {
 				"title": "Bonjour auto-discovery",
-				"body": "On the same network, TuneSync discovers WebDAV, SMB, FTP, and NFS services. Some media servers also support quick connect or account authorization. For internet access, use HTTPS, a VPN, or a securely configured reverse proxy."
+				"body": "On the same network, TuneSync finds _webdav._tcp, _smb._tcp, _ftp._tcp, _nfs._tcp on its own and drops you straight into setup — no typing addresses."
 			},
 			"connectStep": {},
 			"indexing": {
 				"title": "Indexing",
-				"body": "File sources scan selected folders and read audio tags; media servers page through structured tracks, albums, and artwork locators. Both map into the same TuneSync library model. Core metadata is written first and enhancements are queued later, so large remote libraries do not wait on every cover or analysis job.",
-				"note": "Sync stays within the folders, music libraries, or collections you selected. Later refreshes use stable IDs, revisions, and modified dates for incremental updates, with progress and results visible in Background Tasks."
+				"body": "Once folders are added, TuneSync scans the audio files inside (mp3, flac, m4a, wav, etc.), reads each file's embedded info (title, artist, album, artwork), and builds the library structure. You can play as soon as it's done — no need to wait for everything to be read. It runs in the background; see progress on Home and under Settings → Background Tasks & Logs — e.g. how many tracks scanned, how many left.",
+				"note": "Only the folders you pick get indexed — it won't pull in the whole disk. When you add new songs to a folder later, the next launch does an incremental scan — no full rebuild."
 			},
 			"playlists": {
 				"title": "Playlists and favorites",
@@ -623,28 +552,9 @@
 		},
 		"metadata": {
 			"title": "Metadata",
-			"lead": "Use core metadata first, then progressively enrich artwork, release data, lyrics, and audio analysis according to network and scraping mode.",
+			"lead": "Compare across sources to fill in artwork, lyrics, and track information, keeping the library organized.",
 			"shotMetadata": "Metadata screenshot",
 			"shotHint": "Replace with a real screenshot: public/screenshots/metadata.png",
-			"modes": {
-				"title": "Three scraping modes",
-				"body": "The mode decides whether source metadata is accepted immediately or followed by external catalog lookups, and which enhancements are queued.",
-				"fast": { "k": "Fast", "v": "Accept source core metadata and skip additional enrichment; best for a server that is already well organized" },
-				"balanced": { "k": "Balanced", "v": "Accept complete core metadata immediately and fill only missing release information and available artwork" },
-				"precise": { "k": "Precise", "v": "Continue multi-source lookup and queue release data, artwork, AI assistance, and audio analysis" }
-			},
-			"progressive": {
-				"title": "Progressive enrichment",
-				"body": "TuneSync separates core synchronization from independent enhancement work so large libraries are not blocked by artwork or audio analysis.",
-				"core": "Title, artist, album, duration, and other core fields enter the library first and are immediately playable",
-				"deferred": "Artwork, release data, AI mood features, BPM, and audio analysis queue and retry independently",
-				"network": "Cellular and Low Data Mode use lightweight catalog lookups; Wi-Fi or Ethernet restores full enrichment",
-				"resume": "Enhancement state is durable and resumes after cancellation, temporary failure, or relaunch"
-			},
-			"manualProtection": {
-				"title": "Manual fields come first",
-				"body": "Automatic enrichment never overwrites titles, artists, albums, years, artwork, BPM, or other fields you edited manually. Source and change history remain available for review and rollback."
-			},
 			"sources": {
 				"title": "Sources",
 				"body": "TuneSync pulls info from these sources, then compares and picks the best:",
@@ -677,7 +587,7 @@
 			},
 			"batch": {
 				"title": "Batch organize",
-				"body": "Whole-library organizing reports core scraping and enhancement work separately. Background Tasks shows completed, pending, failed, and remaining enhancement counts. Stop the current batch, retry failed items independently, or let artwork, AI, BPM, and audio analysis continue when Wi-Fi returns."
+				"body": "Whole-library batch refresh works too — fill in every track missing info in one go. The background task center tracks progress: how many done, how many failed. Apply strategies include standard, metadata only (skip artwork), and batch disk artwork (saves memory). You can also pick a scraping mode — fast, balanced, or precise; more precise means more sources checked and slower throughput, but better matches for tricky files."
 			},
 			"history": {
 				"title": "History and rollback",
@@ -785,7 +695,7 @@
 			},
 			"free": {
 				"title": "What's free",
-				"body": "Core listening stays free: local folders, WebDAV / SMB / NFS / FTP / Synology DSM, plus Plex, Jellyfin, Emby, Navidrome, Subsonic, and Audio Station; library sync, background playback, existing synchronized lyrics, recognition, and basic metadata organization are included. Vocal separation and synced-lyrics generation share two free uses per week; BPM and audio-feature analysis includes five per day. The app shows current allowances and device eligibility."
+				"body": "Core listening stays free: WebDAV / SMB / NFS / FTP connections, indexing and browsing, background playback, existing synchronized lyrics, song recognition, and basic metadata organization. Vocal separation and synced-lyrics generation share two free uses per week; BPM and audio-feature analysis includes five per day. The app shows the current allowance and device eligibility."
 			},
 			"purchase": {
 				"title": "Purchasing",
@@ -803,7 +713,7 @@
 	},
 	"privacy": {
 		"title": "Privacy Policy",
-		"lastUpdated": "Last updated: August 10, 2026",
+		"lastUpdated": "Last updated: July 5, 2026",
 		"intro": "TuneSync is designed with privacy as a core principle. This policy explains what data we collect and how we use it.",
 		"noCollection": {
 			"title": "Data We Do Not Collect",
@@ -814,20 +724,20 @@
 		},
 		"onDevice": {
 			"title": "Data Stored on Your Device",
-			"body": "The following data is stored on your device and is not sent to TuneSync-owned servers. When you intentionally use metadata, lyrics, or AI services, the relevant query is sent directly to the provider you selected:",
+			"body": "The following data is stored locally on your device and is never sent to our servers:",
 			"p1": "Your music library index (song titles, artists, album names, file paths).",
 			"p2": "Album artwork and metadata fetched for your songs.",
 			"p3": "Lyrics downloaded or generated for display during playback.",
 			"p4": "Karaoke recordings you create (stored only if you choose to save them).",
 			"p5": "App settings and preferences.",
-			"footer": "You can remove caches, recordings, and sources inside the app, or delete the library stored in the app container. Removing a source also removes the secure credentials associated with that source."
+			"footer": "This data remains on your device and can be deleted at any time by removing the app or clearing data from within Settings."
 		},
 		"permissions": {
 			"title": "Permissions",
 			"body": "TuneSync requests the following permissions:",
-			"mic": "Microphone: Used for song recognition and karaoke recording, and requested only when you enter those features. Saved takes remain on your device.",
-			"speech": "Speech Recognition: Used to transcribe vocals on-device and add timing to plain-text lyrics.",
-			"network": "Local Network: Used to discover and connect to WebDAV, SMB, FTP, NFS, NAS devices, and media servers on the current LAN.",
+			"mic": "Microphone: Used only when you use Sing/Karaoke mode to record your voice. Recording is processed locally on your device.",
+			"speech": "Speech Recognition: Used for the song recognition feature. Audio is processed on-device or by the system speech framework.",
+			"network": "Local Network: Used to discover and connect to WebDAV media servers on your local network.",
 			"music": "Apple Music: Used to import artwork and metadata from your Apple Music library if you choose to use that feature."
 		},
 		"ai": {
@@ -839,8 +749,8 @@
 			"body": "TuneSync offers an optional TuneSync Plus subscription that unlocks vocal separation, synced lyrics generation, precise metadata scraping, and trend discovery. Purchases are processed entirely by Apple's App Store via StoreKit. We never see, store, or process your payment information — Apple only tells us whether you have an active entitlement. You can manage or cancel your subscription at any time in System Settings → Apple ID → Subscriptions."
 		},
 		"webdav": {
-			"title": "Remote source credentials",
-			"body": "Server passwords, device tokens, and AI API keys are stored in the device Keychain and used only with sources or providers you configure. They are not written to the library database or local diagnostic reports. TuneSync does not operate a server that proxies these credentials or your media."
+			"title": "WebDAV Connections",
+			"body": "If you connect TuneSync to a WebDAV server, your credentials are stored securely in the device keychain and are only used to access your media files on that server. We do not have access to your WebDAV credentials."
 		},
 		"children": {
 			"title": "Children's Privacy",
@@ -848,7 +758,7 @@
 		},
 		"rights": {
 			"title": "Your Rights",
-			"body": "You can manage sources, library data, caches, and recordings inside the app. Uninstalling removes the app-container data; removing a source deletes its associated Keychain credentials. Data received by third-party providers is governed by their own privacy policies."
+			"body": "Since all data is stored locally on your device, you have full control. Uninstalling the app removes all associated data immediately."
 		},
 		"changes": {
 			"title": "Changes to This Policy",
@@ -871,15 +781,15 @@
 		"faq": {
 			"title": "Frequently Asked Questions",
 			"q1": "How do I add music to TuneSync?",
-			"a1": "TuneSync works with your own library. Import a local folder; connect WebDAV, SMB, FTP, NFS, or Synology DSM; or sync Plex, Jellyfin, Emby, Navidrome, Subsonic, and Audio Station. Open Settings → Library Sources & Indexing to add one.",
+			"a1": "TuneSync works with your own music library. You can import audio files from the Files app, or connect to a WebDAV/NAS server via Settings > Network Discovery. The app supports MP3, FLAC, M4A, and other common audio formats.",
 			"q2": "Does TuneSync require an internet connection?",
-			"a2": "Music already on the device and cached content can play offline. Remote streaming, sync, and online metadata require a network. Cellular and Low Data Mode automatically limit work to lightweight lookups; artwork, AI, BPM, and audio analysis can wait for Wi-Fi.",
+			"a2": "Core playback works offline. An internet connection is needed for downloading album art, lyrics, and metadata, or when using optional AI features.",
 			"q3": "How does the karaoke/sing mode work?",
-			"a3": "While a song plays, open Karaoke. TuneSync first separates the track into vocal and accompaniment stems on-device. Once ready, adjust the original-vocal level and record. Takes stay local and can be trimmed, shaped, and shared non-destructively in Recording Studio.",
+			"a3": "While a song is playing, tap the sing/microphone button. Grant microphone permission, and TuneSync will display synchronized lyrics and record your voice mixed with the instrumental. Recordings are saved locally on your device.",
 			"q4": "Is my data private?",
 			"a4": "Yes. TuneSync is local-first and does not collect your personal data. See our Privacy Policy for details.",
 			"q5": "Which devices are supported?",
-			"a5": "TuneSync 1.0.10 requires iOS 26.0 or later and is currently delivered as a native iPhone app."
+			"a5": "TuneSync requires iOS 18 or later and is optimized for iPhone."
 		},
 		"resources": {
 			"title": "Documentation",

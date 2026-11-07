@@ -11,9 +11,11 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
  * For local dev or a custom-domain deploy, leave it unset (served from "/").
  */
 const basePath = process.env.BASE_PATH ?? "";
-const isStaticExport = process.env.CLOUDFLARE_PAGES === "true";
 
 const isSubPath = basePath.length > 0;
+// Cloudflare Pages on the custom domain also needs a static export, without
+// the GitHub Pages path prefix. This leaves local/server defaults unchanged.
+const isStaticExport = isSubPath || process.env.STATIC_EXPORT === "true";
 
 // Expose the base path to client components so <img>/asset URLs resolve
 // correctly under a sub-path deployment.
@@ -27,7 +29,7 @@ const nextConfig: NextConfig = {
   // `next dev` mis-detects the workspace root and fails to resolve routes.
   outputFileTracingRoot: path.resolve(__dirname),
   // Sub-path deploys (GitHub Pages) serve static files only.
-  output: isSubPath || isStaticExport ? "export" : undefined,
+  output: isStaticExport ? "export" : undefined,
   basePath: isSubPath ? basePath : undefined,
   // Match GitHub Pages' directory-style URLs and let next-intl's locale
   // prefix resolve cleanly under the base path.

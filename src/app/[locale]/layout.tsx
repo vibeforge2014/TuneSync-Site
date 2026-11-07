@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -86,6 +87,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Footer />
           </div>
         </NextIntlClientProvider>
+        <Script id="zensoft-site-analytics" src="https://zensoft.top/analytics.js" strategy="afterInteractive" data-product="tunesync" data-base-path={process.env.NEXT_PUBLIC_BASE_PATH ?? ""} referrerPolicy="no-referrer" />
       </body>
     </html>
   );

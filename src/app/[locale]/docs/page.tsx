@@ -11,13 +11,11 @@ import {
   TrendingUp,
   FileMusic,
   Settings,
-  Cpu,
   ArrowRight,
 } from "lucide-react";
 
 const CARDS = [
   { href: "/docs/getting-started", icon: Rocket, tint: "#3366ff", key: "gettingStarted" },
-  { href: "/docs/technical-spec", icon: Cpu, tint: "#f75e3c", key: "technicalSpec" },
   { href: "/docs/library", icon: Server, tint: "#0ea5e9", key: "library" },
   { href: "/docs/player", icon: Music4, tint: "#a855f7", key: "player" },
   { href: "/docs/lyrics", icon: FileMusic, tint: "#8b5cf6", key: "lyrics" },

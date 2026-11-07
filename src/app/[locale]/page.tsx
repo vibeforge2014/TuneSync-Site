@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Server, Music4, Mic, AudioWaveform, Disc3, TrendingUp, Wand2 } from "lucide-react";
+import { Server, Music4, Mic, AudioWaveform, Disc3, TrendingUp } from "lucide-react";
 import Hero from "../../components/marketing/Hero";
 import IntroSection from "../../components/marketing/IntroSection";
 import FeatureRow from "../../components/marketing/FeatureRow";
@@ -29,19 +29,9 @@ export default async function HomePage({
         title={f("library.featureTitle")}
         description={f("library.featureDesc")}
         bullets={[f("library.featureB1"), f("library.featureB2"), f("library.featureB3"), f("library.featureB4")]}
-        screenshot={`${locale}/media-sources.png`}
+        screenshot={`${locale}/library.png`}
         screenshotLabel={f("library.screenshot")}
         icon={Server}
-      />
-      <FeatureRow
-        eyebrow={f("metadata.title")}
-        title={f("metadata.featureTitle")}
-        description={f("metadata.featureDesc")}
-        bullets={[f("metadata.featureB1"), f("metadata.featureB2"), f("metadata.featureB3"), f("metadata.featureB4")]}
-        screenshot={`${locale}/metadata-mobile.png`}
-        screenshotLabel={f("metadata.screenshot")}
-        icon={Wand2}
-        reverse
       />
       <FeatureRow
         eyebrow={f("player.title")}
@@ -51,6 +41,7 @@ export default async function HomePage({
         screenshot="player-lyrics.png"
         screenshotLabel={f("player.screenshot")}
         icon={Music4}
+        reverse
       />
       <FeatureRow
         eyebrow={f("karaoke.title")}
@@ -60,7 +51,6 @@ export default async function HomePage({
         screenshot="karaoke.png"
         screenshotLabel={f("karaoke.screenshot")}
         icon={Mic}
-        reverse
       />
       <FeatureRow
         eyebrow={f("recordingStudio.title")}
@@ -75,6 +65,7 @@ export default async function HomePage({
         screenshot={`${locale}/recording-studio.png`}
         screenshotLabel={f("recordingStudio.screenshot")}
         icon={AudioWaveform}
+        reverse
       />
       <FeatureRow
         eyebrow={f("ai.title")}
@@ -84,7 +75,6 @@ export default async function HomePage({
         screenshot="ai-dj.png"
         screenshotLabel={f("ai.screenshot")}
         icon={Disc3}
-        reverse
       />
       <FeatureRow
         eyebrow={f("discovery.title")}
@@ -94,6 +84,7 @@ export default async function HomePage({
         screenshot="discovery.png"
         screenshotLabel={f("discovery.screenshot")}
         icon={TrendingUp}
+        reverse
       />
 
       <div className="hr-soft mx-auto max-w-5xl" />

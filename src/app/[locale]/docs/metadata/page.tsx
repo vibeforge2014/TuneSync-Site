@@ -19,32 +19,9 @@ export default async function MetadataPage({ params }: { params: Promise<{ local
 			<ScreenshotPlaceholder
 				label={t('shotMetadata')}
 				hint={t('shotHint')}
-				screenshot={`${locale}/metadata-mobile.png`}
+				screenshot="metadata.png"
 				tint="#10b981"
 			/>
-
-			<h2>{t('modes.title')}</h2>
-			<p>{t('modes.body')}</p>
-			<KeyValueTable
-				rows={[
-					{ k: t('modes.fast.k'), v: t('modes.fast.v') },
-					{ k: t('modes.balanced.k'), v: t('modes.balanced.v') },
-					{ k: t('modes.precise.k'), v: t('modes.precise.v') },
-				]}
-			/>
-
-			<h2>{t('progressive.title')}</h2>
-			<p>{t('progressive.body')}</p>
-			<ul>
-				<li>{t('progressive.core')}</li>
-				<li>{t('progressive.deferred')}</li>
-				<li>{t('progressive.network')}</li>
-				<li>{t('progressive.resume')}</li>
-			</ul>
-
-			<Callout variant="success" title={t('manualProtection.title')}>
-				<p>{t('manualProtection.body')}</p>
-			</Callout>
 
 			<h2>{t('sources.title')}</h2>
 			<p>{t('sources.body')}</p>

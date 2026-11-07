@@ -19,7 +19,7 @@ export default async function LibraryPage({
       <ScreenshotPlaceholder
         label={t("shotLibrary")}
         hint={t("shotHint")}
-        screenshot={`${locale}/media-sources.png`}
+        screenshot={`${locale}/library.png`}
         tint="#0ea5e9"
       />
 
@@ -31,18 +31,7 @@ export default async function LibraryPage({
           { k: "SMB", v: t("protocols.smb") },
           { k: "NFS", v: t("protocols.nfs") },
           { k: "FTP / FTPS", v: t("protocols.ftp") },
-          { k: "Synology DSM", v: t("protocols.synology") },
-        ]}
-      />
-
-      <h2>{t("mediaServers.title")}</h2>
-      <p>{t("mediaServers.body")}</p>
-      <KeyValueTable
-        rows={[
-          { k: "Plex", v: t("mediaServers.plex") },
-          { k: "Jellyfin / Emby", v: t("mediaServers.mediaBrowser") },
-          { k: "Navidrome / Subsonic", v: t("mediaServers.openSubsonic") },
-          { k: "Synology Audio Station", v: t("mediaServers.audioStation") },
+          { k: "DAAP", v: t("protocols.daap") },
         ]}
       />
 
