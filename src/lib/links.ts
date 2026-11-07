@@ -1,15 +1,12 @@
 /**
  * Central place for external links (download / store).
  *
- * These ship with sensible DEFAULT placeholder values so the site never
- * shows a dead end. Replace them with the real URLs when the app is live.
- *
- *   - iOS: App Store / TestFlight link
+ *   - iOS: App Store link
  *   - (Android / Windows: not yet available)
  */
 export const DOWNLOAD_LINKS = {
-	/** iOS TestFlight link. */
-	ios: 'https://testflight.apple.com/join/1QVnhpkZ',
+	/** iOS App Store link. */
+	ios: 'https://apps.apple.com/us/app/tunesync-nas%E6%97%A0%E6%8D%9F%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/id6783845149',
 	android: null,
 	windows: null,
 } as const
