@@ -1,13 +1,49 @@
-name: Deploy unified norelle.cc site
+name: Deploy TuneSync site to Cloudflare Pages
 
 on:
   push:
     branches: [master]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: tunesync-site-production
+  cancel-in-progress: true
+
 jobs:
   deploy:
-    uses: vibeforge2014/portal/.github/workflows/deploy-pages.yml@main
-    secrets:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build static site
+        # Static export from the site root (no base path) — the Cloudflare
+        # Pages custom domain serves from "/".
+        run: pnpm build
+        env:
+          STATIC_EXPORT: "true"
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4"
+          command: pages deploy out --project-name=tunesync-site --branch=main
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
