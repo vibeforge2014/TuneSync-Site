@@ -46,5 +46,8 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "4"
-          command: pages deploy out --project-name=tunesync-site --branch=main
+          # The project's production branch is `master` — deploys to any other
+          # branch only create previews and the root pages.dev/custom domain
+          # keep serving the old production deployment.
+          command: pages deploy out --project-name=tunesync-site --branch=master
           githubToken: ${{ secrets.GITHUB_TOKEN }}
