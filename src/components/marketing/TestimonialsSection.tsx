@@ -3,31 +3,28 @@
 import { useTranslations } from "next-intl";
 import Reveal from "./Reveal";
 
-const KEYS = ["quote1","quote2","quote3","quote4","quote5","quote6"] as const;
+const KEYS = ["quote1", "quote2", "quote3", "quote4", "quote5", "quote6"] as const;
 
-/** Static testimonial card grid (replaces the old marquee). */
 export default function TestimonialsSection() {
   const t = useTranslations("home");
   return (
-    <section className="container-page py-16 md:py-24">
-      <Reveal className="mx-auto max-w-2xl text-center">
-        <span className="eyebrow">{t("testimonialsEyebrow")}</span>
-        <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">{t("testimonialsTitle")}</h2>
+    <section className="container-page testimonials">
+      <Reveal variant="fade" className="testimonials-head">
+        <div>
+          <span className="section-kicker">{t("testimonialsEyebrow")}</span>
+          <h2 className="testimonials-title">{t("testimonialsTitle")}</h2>
+        </div>
+        <span className="testimonials-mark" aria-hidden>”</span>
       </Reveal>
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {KEYS.map((k, i) => (
-          <Reveal key={k} delay={i * 60}>
-            <figure className="surface-card lift-on-hover flex h-full flex-col p-6">
-              <blockquote className="flex-1 text-[var(--fg)]">“{t(`testimonials.${k}.text`)}”</blockquote>
-              <figcaption className="mt-5 flex items-center gap-3">
-                <span className="grid size-9 shrink-0 place-items-center rounded-full text-sm font-semibold text-white"
-                      style={{ background: "var(--brand)" }}>
-                  {t(`testimonials.${k}.author`).slice(0,1)}
-                </span>
-                <div className="leading-tight">
-                  <p className="text-sm font-semibold text-[var(--fg)]">{t(`testimonials.${k}.author`)}</p>
-                  <p className="text-xs text-[var(--fg-muted)]">{t(`testimonials.${k}.role`)}</p>
-                </div>
+      <div className="testimonial-grid">
+        {KEYS.map((key, i) => (
+          <Reveal key={key} variant="fade" delay={i * 55}>
+            <figure className="testimonial">
+              <span className="testimonial-index">NOTE / {String(i + 1).padStart(2, "0")}</span>
+              <blockquote>“{t(`testimonials.${key}.text`)}”</blockquote>
+              <figcaption>
+                <p className="testimonial-author">{t(`testimonials.${key}.author`)}</p>
+                <p className="testimonial-role">{t(`testimonials.${key}.role`)}</p>
               </figcaption>
             </figure>
           </Reveal>

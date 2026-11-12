@@ -1,7 +1,7 @@
 {
 	"common": {
 		"siteName": "TuneSync",
-		"tagline": "将分散于各处的音乐，重新汇于一处。",
+		"tagline": "把分散在服务器、文件夹和设备里的音乐，重新汇于一处。",
 		"rights": "保留所有权利。",
 		"disclaimer": "本网站为非官方介绍与使用文档，与 Apple Inc. 无任何关联。",
 		"appleDisclaimer": "Apple、Apple 标志、iPhone、iPad 是 Apple Inc. 的商标。App Store 是 Apple Inc. 的服务标志。",
@@ -10,8 +10,8 @@
 		"backHome": "返回首页"
 	},
 	"meta": {
-		"title": "TuneSync — 个人音乐库、歌词与 K 歌录音",
-		"description": "连接 NAS 或本地文件夹，在 iPhone 上统一浏览、搜索与播放个人音乐库；补全元数据和歌词，分离人声，并在录音工作室中精修 K 歌作品。"
+		"title": "TuneSync — 把你的音乐，集中到一处",
+		"description": "连接 WebDAV、Plex、Subsonic、Navidrome、Jellyfin、Emby、Synology Audio Station 或本地文件夹，统一浏览与播放；支持无限播放与平滑过渡、同步歌词、人声分离，以及录制、混音与分享自己的演唱。"
 	},
 	"nav": {
 		"features": "功能特性",
@@ -25,17 +25,17 @@
 		"privacy": "隐私政策"
 	},
 	"home": {
-		"badge": "TuneSync 1.0.7 · 原生 iPhone 音乐 App",
-		"headline": "把你的音乐，<accent>集中到一处</accent>",
-		"subhead": "连接 NAS 与本地文件夹，统一浏览、搜索和播放个人曲库；补全元数据与歌词，把喜欢的歌变成伴奏，并在全新录音工作室中精修演唱。",
+		"badge": "TuneSync 1.0.32 · iPhone、iPad 与 Mac",
+		"headline": "<lead>把你的音乐，</lead><accent>集中到一处</accent>",
+		"subhead": "连接 WebDAV、Plex、Subsonic、Navidrome、Jellyfin、Emby、Synology Audio Station 或本地文件夹。TuneSync 把它们汇成一个曲库，用无限播放与平滑过渡接着听，跟随同步歌词，也能分离人声、录制并混音自己的演唱。",
 		"introTitle": "让音乐不再分散在多个 App 之间。",
-		"introBody": "TuneSync 将服务器、文件夹与播放器整合在一起，连接后即可使用。",
+		"introBody": "TuneSync 将服务器、文件夹与播放器整合在一起，连接后即可开听，封面与元数据会在后台逐步补全。",
 		"ctaPrimary": "开始使用",
 		"ctaSecondary": "查看功能",
-		"ctaDownload": "下载 iOS 版",
+		"ctaDownload": "下载 TuneSync",
 		"downloadEyebrow": "下载",
 		"downloadTitle": "下载 TuneSync",
-		"downloadSubtitle": "在 iPhone 上连接音乐服务器与本地文件夹，统一管理曲库、歌词、K 歌和录音。目前提供 iPhone 版。",
+		"downloadSubtitle": "TuneSync 已上架 App Store，支持 iPhone、iPad 与 Mac。曲库浏览与日常播放免费；TuneSync Plus 提供进阶 K 歌、歌词、元数据、分析与发现功能。",
 		"downloadAvailable": "当前可用",
 		"downloadComingSoon": "暂未提供",
 		"downloadIOSAction": "立即开始",
@@ -43,16 +43,16 @@
 		"downloadUnavailable": "暂未开放",
 		"downloadPlatforms": {
 			"ios": {
-				"label": "iOS",
-				"desc": "为 iPhone 打造的原生体验，可在其中连接服务器、整理曲库并播放。"
+				"label": "iPhone / iPad / Mac",
+				"desc": "一个原生应用，界面适配 iPhone、iPhone Duo、iPad 与 Mac；连接服务器、整理曲库、直接播放。"
 			},
 			"android": {
 				"label": "Android",
-				"desc": "当前没有 Android 版本，TuneSync 现阶段专注于原生 iPhone 体验。"
+				"desc": "目前没有 Android 版本，TuneSync 现阶段专注于 Apple 平台。"
 			},
 			"windows": {
 				"label": "Windows",
-				"desc": "Windows 暂无计划，先把 iPhone 体验打磨到最好。"
+				"desc": "Windows 暂无计划，先把 iPhone、iPad 与 Mac 的体验打磨好。"
 			}
 		},
 		"phoneLabel": "TuneSync App 截图",
@@ -65,112 +65,130 @@
 				"role": "NAS 用户 · 自建 WebDAV"
 			},
 			"quote2": {
-				"text": "AI DJ 的自动续接很实用，队列即将结束时它会自动补充，无需手动选择。",
+				"text": "无限播放会在队列快见底时自动补上相近的歌，配合交叉淡化，听很久也不用手动切歌。",
 				"author": "M. Chen",
-				"role": "BYOK 接入 DeepSeek"
+				"role": "长时间连续播放"
 			},
 			"quote3": {
-				"text": "没想到可以在手机上去除原唱自行演唱，调低人声、跟随伴奏录制，完成后还能回放。",
+				"text": "没想到可以在手机上去除原唱自行演唱，调低人声、跟随伴奏录制，再到音频工作室里混音。",
 				"author": "阿凯",
-				"role": "Core ML 分离"
+				"role": "K 歌录音"
 			},
 			"quote4": {
-				"text": "曲库信息此前比较混乱，运行一次批量整理后，封面和年份基本都补全了。",
+				"text": "曲库信息此前比较混乱，把文件标签与 MusicBrainz、iTunes 比对后，可以自己决定补全哪些字段。",
 				"author": "张芮",
-				"role": "批量整理整库"
+				"role": "元数据整理"
 			},
 			"quote5": {
-				"text": "使用自己的 API Key 这一点我很认同，请求直接发送至所选模型，不经过第三方。",
+				"text": "iPad 上歌词有独立的阅读区域，随节拍轻微律动的背景也恰到好处，不会喧宾夺主。",
 				"author": "D. Wang",
-				"role": "自托管 Ollama"
+				"role": "iPad + iPhone"
 			},
 			"quote6": {
 				"text": "它在局域网中自动发现了我的服务器，配置后即完成连接，比预期更便捷。",
 				"author": "Eric",
-				"role": "SMB / NFS 连接"
+				"role": "家庭服务器上的 Plex"
 			}
 		},
 		"ctaTitle": "连接你的音乐，开始播放。",
-		"ctaBody": "参考快速上手指南连接一台服务器，几分钟即可完成。"
+		"ctaBody": "添加一台服务器或一个本地文件夹即可开始播放，封面与元数据会在收听时逐步补全。"
 	},
 	"features": {
 		"title": "功能概览",
-		"subtitle": "从曲库管理、播放和歌词，到 K 歌与录音精修——集中在一个应用中。",
+		"subtitle": "一个曲库、听不完的播放、以及打磨自己演唱的工作室——都在这一个应用里。",
 		"pageTitle": "功能特性",
 		"library": {
 			"title": "曲库",
-			"desc": "连接 WebDAV / SMB / NFS / FTP 服务器，或导入本地文件夹，自动整理为一个曲库。",
-			"featureTitle": "在手机上访问 NAS 中的音乐",
-			"featureDesc": "处于同一局域网时，TuneSync 会自动发现媒体服务器，配置一次即可连接。可自行选择索引的文件夹，索引完成后即可播放。",
-			"featureB1": "WebDAV / SMB / NFS / FTP / DAAP 多协议",
-			"featureB2": "Bonjour 自动发现局域网服务器",
-			"featureB3": "文件夹级索引，只收录你选的目录",
-			"featureB4": "本地文件夹与远端服务器混合管理",
-			"screenshot": "曲库与服务器截图"
+			"desc": "把各来源的歌曲、专辑、歌手与歌单放在一起，全库搜索。",
+			"featureTitle": "把分散的音乐汇成一个曲库",
+			"featureDesc": "按歌曲、专辑、歌手或歌单浏览，也可以搜索整个曲库。添加文件夹后即可开听，封面与元数据会在收听时逐步补全。",
+			"featureB1": "浏览歌曲、专辑、歌手与歌单",
+			"featureB2": "跨所有已连接来源全库搜索",
+			"featureB3": "索引在后台进行时也能立即播放",
+			"featureB4": "封面与元数据渐进补全",
+			"screenshot": "曲库界面"
+		},
+		"sources": {
+			"title": "音乐来源",
+			"desc": "WebDAV、Plex、Subsonic、Navidrome、Jellyfin、Emby、Synology Audio Station 与本地文件夹。",
+			"featureTitle": "连接你已经拥有的音乐",
+			"featureDesc": "添加 WebDAV 服务器、选择音乐服务器，或导入本地文件夹。TuneSync 只索引你选中的目录，添加后即可开播，封面与元数据会在后台逐步补全。",
+			"featureB1": "支持 HTTPS 的 WebDAV，以及本地音乐文件夹",
+			"featureB2": "Plex、Subsonic、Navidrome、Jellyfin、Emby",
+			"featureB3": "Synology Audio Station 与文件夹级索引",
+			"featureB4": "索引未完成时即可开始播放",
+			"screenshot": "添加服务器界面"
 		},
 		"player": {
 			"title": "播放",
-			"desc": "全屏播放器，支持逐行同步歌词、播放队列、睡眠定时与 AirPlay。",
-			"featureTitle": "歌词随播放逐行高亮",
-			"featureDesc": "播放界面会跟随进度滚动歌词并高亮当前行，点击任意行可跳转至该句。背景颜色取自封面，无时间轴时可切换为纯文本阅读模式。",
-			"featureB1": "全屏 / 迷你播放器，随手切",
-			"featureB2": "同步歌词自动滚动、点击跳转、拖拽浏览",
-			"featureB3": "播放队列、循环、随机、倍速、AirPlay",
-			"featureB4": "睡眠定时与后台播放",
-			"screenshot": "播放器截图"
+			"desc": "无损播放、无限队列、平滑过渡，以及随节拍律动的播放器背景。",
+			"featureTitle": "一直听下去，不必再碰手机",
+			"featureDesc": "播放 FLAC、ALAC 及曲库中的常见格式，支持后台播放与完整队列。队列将尽时，无限播放会自动补入相近曲目；平滑过渡提供 1 / 3 / 5 / 8 秒的交叉淡化。全屏播放器取色自封面，也可跟随设备端识别的节拍轻微律动。",
+			"featureB1": "FLAC、ALAC 与常见格式，支持后台播放",
+			"featureB2": "无限播放自动续接队列",
+			"featureB3": "1 / 3 / 5 / 8 秒平滑过渡",
+			"featureB4": "封面取色、随节拍律动的播放器背景",
+			"screenshot": "正在播放界面"
+		},
+		"lyrics": {
+			"title": "歌词与 K 歌",
+			"desc": "同步或静态歌词，字号与动效可调，一键进入演唱模式。",
+			"featureTitle": "逐句跟唱，一键切到演唱",
+			"featureDesc": "有时间轴时歌词随播放滚动并高亮当前行，没有时间轴则以纯文本静态显示。字号与动效都能自行调整；点击麦克风即可在设备端分离人声与伴奏，也可选用已配置的可选云端服务。",
+			"featureB1": "同步或静态歌词，字号可调",
+			"featureB2": "可选的节拍律动效果，在设备端识别",
+			"featureB3": "设备端人声分离，或可选云端服务",
+			"featureB4": "从歌词页一键进入演唱模式",
+			"screenshot": "同步歌词界面"
 		},
 		"karaoke": {
-			"title": "伴唱",
-			"desc": "在本机分离人声与伴奏，调低原唱，通过麦克风录制演唱。",
-			"featureTitle": "去除原唱，跟随伴奏演唱",
-			"featureDesc": "TuneSync 会在你的设备上将一首歌曲分离为人声与伴奏两轨，两轨音量可独立调节。调低原唱、保留伴奏即可演唱，麦克风会同步录制你的声音。首次分离需要等待，结果会被缓存以便复用。",
-			"featureB1": "Core ML 设备端人声分离（MDX / DTTNet）",
-			"featureB2": "实时调节原声音轨，3-2-1 倒计时开录",
-			"featureB3": "麦克风录音带输入/输出延时补偿",
-			"featureB4": "录音保存为「我的录音」，可继续进入录音工作室",
-			"screenshot": "K 歌截图"
+			"title": "演唱与录音",
+			"desc": "调低原唱、跟随伴奏演唱，并同步录下自己的声音。",
+			"featureTitle": "把这一遍演唱，稳稳地录下来",
+			"featureDesc": "分离完成后，调低原唱、保留伴奏，跟着歌词演唱；麦克风会把你的声音与伴奏一起录制，并通过输入/输出延时补偿保持对齐。云端分离失败时，可在播放器内直接取消并重试。",
+			"featureB1": "人声与伴奏音量独立可调",
+			"featureB2": "麦克风录音带延时补偿",
+			"featureB3": "设备端分离，或选用云端服务",
+			"featureB4": "分离失败可就地取消并重试",
+			"screenshot": "录音进行中界面"
 		},
-		"recordingStudio": {
-			"title": "录音工作室",
-			"desc": "查看真实波形，裁剪、调音并以非破坏方式保存你的 K 歌录音。",
+		"audioStudio": {
+			"title": "音频工作室",
+			"desc": "在真实波形上混音、裁剪与补录，随时对比「编辑后」与「原始」。",
 			"featureTitle": "把一次演唱，打磨成想留下的版本",
-			"featureDesc": "保存 K 歌录音后，可直接进入录音工作室。沿真实波形选择保留片段，调整总音量并加入录音棚或音乐厅氛围；原始录音始终保留，可随时对比、撤销或恢复。",
-			"featureB1": "真实波形时间线，拖动手柄精确裁剪",
-			"featureB2": "总音量、录音棚与音乐厅空间氛围",
-			"featureB3": "原始 / 编辑后即时试听，支持撤销与重做",
-			"featureB4": "非破坏保存、分享成品并一键恢复原始录音",
-			"screenshot": "TuneSync 录音工作室"
+			"featureDesc": "在音频工作室打开已保存的录音：平衡人声与伴奏，裁剪保留片段，或补录其中一段。可选「人声突出」「自然融合」「现场氛围」预设，再微调音色、空间与人声对齐。随时切换「编辑后 / 原始」，源文件永远不会被覆盖。",
+			"featureB1": "真实波形上的混音 / 裁剪 / 补录",
+			"featureB2": "人声突出、自然融合、现场氛围预设",
+			"featureB3": "音色、空间与人声对齐调节",
+			"featureB4": "编辑后 / 原始即时试听，非破坏保存",
+			"screenshot": "音频工作室界面"
 		},
-		"ai": {
-			"title": "AI 助手",
-			"desc": "使用你自己的 API Key，让 AI 推荐下一首歌曲或整理文件名。",
-			"featureTitle": "使用你自己的密钥，接入常用模型",
-			"featureDesc": "填入你自己的 API Key 即可使用——已内置 OpenAI、Anthropic、Gemini、智谱、DeepSeek 等多家预设，也可填入自定义端点或本地 Ollama。AI DJ 会根据你的收听习惯续接歌单，并帮助整理不规范的文件名。",
-			"featureB1": "40+ 服务商预设 + 自定义 OpenAI 兼容端点",
-			"featureB2": "即时 / 推理双模型，按场景自动选用",
-			"featureB3": "AI DJ 三档自动化：预览 / 一键播放 / 自动续接",
-			"featureB4": "联网搜索、查封面、查歌词、控制播放与歌单的工具调用",
-			"screenshot": "AI 设置截图"
+		"takePlayback": {
+			"title": "回放作品",
+			"desc": "在播放器里听完成的作品，继续打磨或直接分享。",
+			"featureTitle": "在熟悉的播放器里，听自己的作品",
+			"featureDesc": "完成的录音会像普通曲目一样出现在播放器中，并拥有取自封面的背景色。先听一遍，决定哪里要改，回到音频工作室继续调整，满意后再把成品分享出去。",
+			"featureB1": "录音作品在同一个播放器中回放",
+			"featureB2": "反复打磨也不会丢失原始录音",
+			"featureB3": "可直接在应用内分享成品",
+			"featureB4": "进阶工作室功能属于 TuneSync Plus",
+			"screenshot": "录音作品回放界面"
 		},
 		"metadata": {
 			"title": "元数据",
-			"desc": "自动补全封面、歌词、发行年份与曲目编号。",
-			"featureTitle": "一次性补齐封面、年份与歌词",
-			"featureDesc": "TuneSync 从 iTunes、MusicBrainz 等多个来源比对，补全缺失的封面、发行年份与曲目编号。支持单曲、专辑与整库批量处理，多个来源冲突时按你设定的权重决定取值。",
-			"featureB1": "iTunes / MusicBrainz / AI 多源比对",
-			"featureB2": "单曲 / 专辑 / 艺术家三级刷新 + 批量整理",
-			"featureB3": "来源权重与字段级「是否覆盖」策略",
-			"screenshot": "元数据截图"
+			"desc": "比对文件标签、MusicBrainz 与 iTunes 数据，自行决定应用哪些字段。"
 		},
-		"discovery": {
-			"title": "发现",
-			"desc": "查看 Apple Music / Bilibili / YouTube 榜单，使用 ShazamKit 识别音乐。",
-			"featureTitle": "没有想听的内容时",
-			"featureDesc": "首页聚合了多个平台的榜单。没有明确目标时，TuneSync 会根据你的收听记录给出推荐。听到喜欢的歌曲，打开识曲即可识别。",
-			"featureB1": "Apple Music / Bilibili / YouTube / Last.fm 多源榜单",
-			"featureB2": "按你平时听的，给你推些歌",
-			"featureB3": "ShazamKit 识曲，历史识别可回看",
-			"screenshot": "发现页截图"
+		"recognition": {
+			"title": "听歌识曲",
+			"desc": "识别身边播放的歌曲，并从自己的曲库中找出对应曲目播放。"
+		},
+		"devices": {
+			"title": "多设备适配",
+			"desc": "界面适配 iPhone、iPhone Duo、iPad 与 Mac。"
+		},
+		"plus": {
+			"title": "TuneSync Plus",
+			"desc": "日常收听免费；Plus 提供进阶 K 歌、歌词、元数据、分析与发现功能。"
 		}
 	},
 	"docsNavGroups": {
@@ -184,7 +202,7 @@
 		"player": "播放器",
 		"lyrics": "歌词",
 		"karaoke": "K 歌",
-		"recordingStudio": "录音工作室",
+		"recordingStudio": "音频工作室",
 		"ai": "AI 助手",
 		"metadata": "元数据",
 		"discovery": "发现",
@@ -202,8 +220,8 @@
 		"gettingStarted": {
 			"title": "快速开始",
 			"lead": "首次使用时，按四步引导将音乐导入。",
-			"shotWelcome": "欢迎引导截图",
-			"shotHint": "替换为真实截图：public/screenshots/getting-started.png",
+			"shotWelcome": "添加音乐来源",
+			"shotHint": "截图取自当前版本。",
 			"overview": {
 				"title": "整体流程",
 				"body": "首次启动会依次展示四页引导——欢迎、连接服务器、添加曲库、精修（封面、歌词、伴唱），每页说明一个步骤。随后进入设置向导，将剩余事项（已连接的服务器数量、文件夹数量、曲目数量、待整理数量）以清单形式逐一跟踪。"
@@ -217,7 +235,7 @@
 			},
 			"step2": {
 				"title": "连服务器",
-				"body": "支持 WebDAV、SMB、NFS、FTP。先连接一台服务器，再向其中添加文件夹。可在同一位置管理所有服务器的状态与连通性，配置完成后即可使用。"
+				"body": "支持 WebDAV、Plex、Subsonic、Navidrome、Jellyfin、Emby、Synology Audio Station，也可导入本地文件夹。先添加一个来源，再选择要索引的目录；连接状态与连接测试都集中在同一处。"
 			},
 			"step3": {
 				"title": "添加曲库",
@@ -234,7 +252,7 @@
 			"permissions": {
 				"title": "会用到的权限",
 				"body": "用到哪个才问哪个：",
-				"localNetwork": "本地网络——找局域网里的 WebDAV / FTP / SMB / NFS 服务器",
+				"localNetwork": "局域网 — 用于发现并连接同一网络内的音乐服务器",
 				"microphone": "麦克风——识曲（听周围在放什么歌）和 K 歌录音要用",
 				"speech": "语音识别——在本机把人声转成文字，给纯歌词加时间轴",
 				"applemusic": "Apple Music——为了能在后台放歌"
@@ -247,16 +265,16 @@
 		"library": {
 			"title": "曲库",
 			"lead": "将本地文件夹与远程服务器整合为一个曲库。",
-			"shotLibrary": "曲库截图",
-			"shotHint": "替换为真实截图：public/screenshots/library.png",
+			"shotLibrary": "曲库界面",
+			"shotHint": "截图取自当前版本。",
 			"protocols": {
-				"title": "支持的网络协议",
-				"body": "能连这些协议，自建服务器或 NAS 都行：",
-				"webdav": "WebDAV——最常见，自建基本都用它，也支持加密的 WebDAVs",
-				"smb": "SMB——Windows 共享和大多数 NAS 默认开的协议，连群晖、威联通这些常用它",
-				"nfs": "NFS——Linux 和 NAS 上常见的网络文件系统，速度快",
-				"ftp": "FTP / FTPS——老牌文件传输，FTPS 是加密版",
-				"daap": "DAAP——iTunes 的音乐共享协议"
+				"title": "支持的来源",
+				"body": "可以连接这些音乐服务器与来源——自建服务、NAS，或设备上已有的文件：",
+				"webdav": "WebDAV — 自建时最常用的选择，远程访问建议使用 HTTPS",
+				"mediaServers": "Plex、Jellyfin、Emby — 直接接入你已经在用的媒体服务器",
+				"subsonic": "Subsonic 与 Navidrome — 轻量的自建音乐服务器",
+				"synology": "Synology Audio Station — 登录 NAS 后添加其中的音乐目录",
+				"local": "本地文件夹 — 从「文件」导入音乐，与服务器内容一起浏览"
 			},
 			"connect": {
 				"title": "连一台服务器",
@@ -266,7 +284,7 @@
 				},
 				"step2": {
 					"title": "选协议、填地址",
-					"body": "挑 WebDAV / SMB / NFS / FTP，填地址、端口和共享路径。不确定通不通可以先「测试连接」。"
+					"body": "选择来源类型，填入地址、端口与凭据。不确定能否连通？先点「测试连接」。"
 				},
 				"step3": {
 					"title": "填账号、保存",
@@ -279,13 +297,13 @@
 			},
 			"shotHintNote": "",
 			"discover": {
-				"title": "Bonjour 自动发现",
-				"body": "同一局域网里，TuneSync 会自动找到 _webdav._tcp、_smb._tcp、_ftp._tcp、_nfs._tcp 这些服务，直接进连接配置，不用手敲地址。"
+				"title": "发现局域网内的服务器",
+				"body": "处于同一局域网时，TuneSync 可以发现附近的音乐服务器并直接进入配置，无需手动输入地址。"
 			},
 			"connectStep": {},
 			"indexing": {
 				"title": "索引",
-				"body": "加好文件夹后，TuneSync 会扫里面的音频文件（mp3、flac、m4a、wav 等），读每个文件内嵌的信息（歌名、歌手、专辑、封面），搭出曲库结构。扫完就能播，不用等全部读完。后台跑着，首页和「设置 → 后台任务与日志」能看到进度——比如扫到第几首、还剩多少。",
+				"body": "添加文件夹后，TuneSync 会扫描其中的音频文件（mp3、flac、m4a、wav 等），读取文件内嵌的标题、歌手、专辑与封面，构建曲库结构。添加后即可开始播放，封面与元数据会在后台索引过程中逐步补全；进度可在首页和「设置 → 后台任务与日志」查看。",
 				"note": "仅索引所选文件夹，不会纳入整块磁盘的内容。文件夹后续新增歌曲时，下次启动会自动增量扫描，无需整体重建。"
 			},
 			"playlists": {
@@ -299,8 +317,8 @@
 		"player": {
 			"title": "播放器",
 			"lead": "全屏播放器、迷你播放器、播放队列及相关控制。",
-			"shotPlayer": "播放器截图",
-			"shotHint": "替换为真实截图：public/screenshots/player-lyrics.png",
+			"shotPlayer": "正在播放界面",
+			"shotHint": "截图取自当前版本。",
 			"modes": {
 				"title": "三种模式",
 				"body": "全屏播放器底部能切三种内容，点切换：",
@@ -339,8 +357,8 @@
 		"lyrics": {
 			"title": "歌词",
 			"lead": "逐行同步歌词、阅读模式，以及多来源歌词获取。",
-			"shotLyrics": "歌词截图",
-			"shotHint": "替换为真实截图：public/screenshots/lyrics.png",
+			"shotLyrics": "同步歌词界面",
+			"shotHint": "截图取自当前版本。",
 			"modes": {
 				"title": "两种模式",
 				"body": "有没有时间轴，歌词视图会自动切：",
@@ -385,11 +403,11 @@
 		"karaoke": {
 			"title": "K 歌",
 			"lead": "在本机分离人声与伴奏，调低原唱，通过麦克风录制演唱。",
-			"shotKaraoke": "K 歌截图",
-			"shotHint": "替换为真实截图：public/screenshots/karaoke.png",
+			"shotKaraoke": "录音进行中",
+			"shotHint": "截图取自当前版本。",
 			"how": {
 				"title": "原理",
-				"body": "进入伴唱模式后，TuneSync 会在本机将歌曲分离为「人声」与「伴奏」两条音轨，两轨音量可独立调节：调低原唱、保留伴奏，即可跟随伴奏演唱。整个过程在本机完成，不会上传音频，也不需要联网。"
+				"body": "在 K 歌模式下，TuneSync 会在设备上把歌曲拆成人声与伴奏两轨，两轨音量独立：调低原唱、保留伴奏即可跟唱。设备端分离不会上传歌曲；需要时也可选用已配置的可选云端分离服务。"
 			},
 			"flow": {
 				"title": "K 歌流程",
@@ -424,19 +442,19 @@
 			},
 			"model": {
 				"title": "第一次要装个模型",
-				"body": "人声分离依赖本机模型（MDX-light，基于 Core ML 运行）。首次使用需在「设置 → 人声分离」中准备模型——下载即可。分离采用分块拼接方式（chunk + overlap-add），结果会被缓存以便复用，因此首次处理某首歌曲会稍慢，之后即可即时使用。"
+				"body": "人声分离使用设备端模型（MDX-light，通过 Core ML 运行）。首次使用需在「设置 → 人声分离」中准备模型，下载即可。分离按分块处理并拼接结果，处理过的歌曲会缓存复用。若设备无法在本机完成分离，可配置可选的云端分离服务。"
 			},
 			"recordings": {
 				"title": "我的录音",
-				"body": "录好的歌存在「设置 → 我的录音」，格式为 m4a。可以回放、分享或删除，也可打开录音工作室继续裁剪和调音。录音包含演唱与伴奏，并应用输入/输出延时补偿以保持同步。"
+				"body": "保存的作品位于「设置 → 我的录音」，为 .m4a 文件，可回放、分享或删除，也可进入音频工作室进行混音、裁剪与补录。录音同时包含你的人声与伴奏，并通过输入/输出延时补偿保持对齐。"
 			},
 			"studio": {
-				"title": "保存后还能继续编辑",
-				"body": "停止并保存后，点「编辑录音」即可进入录音工作室；也可稍后从「设置 → 我的录音」打开。编辑会生成单独的成品文件，原始录音不会被覆盖。"
+				"title": "在音频工作室里继续打磨",
+				"body": "「保存并停止」后选择「编辑录音」即可立即进入音频工作室，之后也能从「设置 → 我的录音」再次打开。编辑会渲染为单独的文件，原始录音不会被覆盖。"
 			},
 			"compatibility": {
 				"title": "K 歌设备兼容性",
-				"body": "App 需要 iOS 18 或更高版本。iPhone 13 及更新机型支持完整的自动人声分离；iPhone 12 可手动准备单首歌曲；iPhone 11 及更早机型不能创建新的分离结果，但仍可使用已缓存歌曲和已有录音。"
+				"body": "设备端人声分离在受支持的 iPhone 上运行。若设备无法在本机完成分离，可改用可选配置的云端分离服务；云端准备失败时，可在播放器内直接取消并重试，不会阻塞播放。"
 			},
 			"live": {
 				"title": "实时活动",
@@ -444,42 +462,42 @@
 			}
 		},
 		"recordingStudio": {
-			"title": "录音工作室",
-			"lead": "用真实波形裁剪 K 歌录音，调整声音并保留随时可恢复的原始版本。",
-			"screenshot": "录音工作室的波形裁剪界面",
+			"title": "音频工作室",
+			"lead": "平衡人声与伴奏、裁剪保留片段或补录，原始录音始终不受影响。",
+			"screenshot": "音频工作室波形与混音界面",
 			"open": {
 				"title": "如何打开",
-				"body": "K 歌录音保存完成后，点击「编辑录音」；或者前往「设置 → 我的录音」，打开某条录音的菜单并选择编辑。"
+				"body": "保存 K 歌录音后选择「编辑录音」即可进入；之后也可从「设置 → 我的录音」打开音频工作室。"
 			},
 			"workflow": {
 				"title": "编辑流程",
 				"step1": {
-					"title": "沿真实波形选择片段",
-					"body": "拖动时间线两端的裁剪手柄，或把播放头停在目标位置后设为开始或结束。成品时长会实时更新。"
+					"title": "平衡两条音轨",
+					"body": "拖动「人声」与「伴奏」滑杆，或先套用「人声突出」「自然融合」「现场氛围」预设。"
 				},
 				"step2": {
-					"title": "试听原始与编辑效果",
-					"body": "在「原始」和「编辑后」之间切换，用播放、前后 5 秒和时间线快速检查切点与声音。"
+					"title": "裁剪或补录",
+					"body": "拖动手柄设定波形上的保留范围，或用「补录」替换其中一段。"
 				},
 				"step3": {
-					"title": "调整声音",
-					"body": "切换到「声音」，调整总音量，并在无氛围、录音棚与音乐厅三种空间感之间选择。"
+					"title": "微调声音",
+					"body": "调整音色、空间与人声对齐，让人声与伴奏贴合到你想要的位置。"
 				},
 				"step4": {
-					"title": "保存或分享",
-					"body": "点「保存」渲染编辑版本。保存后可直接分享成品；需要重新开始时，可从更多菜单恢复原始录音。"
+					"title": "对比、保存、分享",
+					"body": "在「编辑后 / 原始」之间切换，然后保存编辑版本或直接分享。原始录音始终保留。"
 				}
 			},
 			"controls": {
-				"title": "编辑控制",
-				"timeline": "波形时间线显示裁剪范围、播放头和最终时长",
-				"preview": "原始 / 编辑后 A/B 试听，支持前后 5 秒跳转",
-				"history": "撤销与重做会记录本次打开期间的裁剪和声音调整",
-				"share": "分享始终使用当前有效版本；保存编辑后分享成品"
+				"title": "工作室控件",
+				"timeline": "真实的人声与伴奏波形，显示选中范围与最终时长",
+				"preview": "编辑后 / 原始即时试听对比",
+				"history": "本次编辑中的混音与裁剪支持撤销与重做",
+				"share": "分享使用当前生效的版本；若想分享成品请先保存"
 			},
 			"nondestructive": {
 				"title": "非破坏编辑",
-				"body": "保存编辑不会覆盖原始 m4a。TuneSync 会保留原始文件并生成单独的编辑版本，因此可以反复调整或一键恢复。"
+				"body": "保存编辑不会覆盖原始的 .m4a 文件。TuneSync 保留源文件并渲染单独的编辑副本，因此可以随时再改，或一键恢复原始录音。"
 			},
 			"format": {
 				"title": "文件与存储",
@@ -489,8 +507,8 @@
 		"ai": {
 			"title": "AI 助手",
 			"lead": "使用你自己的 API Key，让 AI 推荐歌曲、整理文件名或撰写专辑简介。请求直接发送至所选服务商，不经过第三方。",
-			"shotAi": "AI 设置截图",
-			"shotHint": "替换为真实截图：public/screenshots/ai-dj.png",
+			"shotAi": "AI 助手设置",
+			"shotHint": "界面可能随版本调整，以 App 内实际界面为准。",
 			"setup": {
 				"title": "启用 AI",
 				"step1": {
@@ -553,8 +571,8 @@
 		"metadata": {
 			"title": "元数据",
 			"lead": "从多个来源比对，补全封面、歌词与曲目信息，使曲库保持整洁。",
-			"shotMetadata": "元数据截图",
-			"shotHint": "替换为真实截图：public/screenshots/metadata.png",
+			"shotMetadata": "曲库与曲目",
+			"shotHint": "截图取自当前版本。",
 			"sources": {
 				"title": "来源",
 				"body": "TuneSync 从这几个来源取信息，然后比对、挑最好的：",
@@ -597,8 +615,8 @@
 		"discovery": {
 			"title": "发现",
 			"lead": "首页推荐、多平台榜单与音乐识别，帮助你发现下一首想听的内容。",
-			"shotDiscovery": "发现页截图",
-			"shotHint": "替换为真实截图：public/screenshots/discovery.png",
+			"shotDiscovery": "曲库首页",
+			"shotHint": "截图取自当前版本。",
 			"home": {
 				"title": "首页",
 				"body": "首页按你曲库里有什么、平时听什么来摆版块，没有内容的版块会自动藏起来：",
@@ -633,8 +651,8 @@
 		"settings": {
 			"title": "设置",
 			"lead": "外观、语言、播放器动画、缓存与后台任务。",
-			"shotSettings": "设置截图",
-			"shotHint": "替换为真实截图：public/screenshots/settings.png",
+			"shotSettings": "来源与索引",
+			"shotHint": "截图取自当前版本。",
 			"appearance": {
 				"title": "外观",
 				"theme": {
@@ -684,18 +702,18 @@
 			"lead": "一项可选订阅，解锁进阶音频、歌词、元数据与发现功能。核心播放始终免费。",
 			"overview": {
 				"title": "Plus 解锁什么",
-				"body": "TuneSync Plus 解锁以下进阶能力；部分计算密集型功能也为免费用户保留周期性体验额度："
+				"body": "TuneSync Plus 解锁以下进阶能力；曲库浏览与日常播放始终免费。"
 			},
 			"features": {
 				"title": "Plus 包含",
-				"separation": "人声分离（K 歌）——在本机把曲目拆成人声和伴奏",
+				"separation": "人声分离（K 歌）— 在设备端分离人声与伴奏，也可选用云端服务",
 				"lyrics": "同步歌词生成——让 App 在本机给纯文本歌词加时间轴",
-				"scraping": "精准元数据刮削——最慢但最细致的刮削模式，会查遍所有来源",
-				"trends": "Apple Music 潮流发现——查看当前地区的 Top 10"
+				"scraping": "精确元数据刮削 — 比对文件标签、MusicBrainz 与 iTunes 后再应用",
+				"trends": "发现与分析 — 个性化推荐与音频特征分析"
 			},
 			"free": {
 				"title": "免费部分",
-				"body": "核心播放永久免费，包括连接 WebDAV / SMB / NFS / FTP、索引与浏览曲库、后台播放、已有同步歌词、识曲与基础元数据整理。人声分离与同步歌词生成共享每周 2 次免费额度，BPM 与音频特征分析每天 5 次；额度与设备兼容性以 App 内显示为准。"
+				"body": "以下能力免费：连接各类来源、索引与浏览、后台播放、已有的同步歌词、听歌识曲，以及基础元数据整理。进阶 K 歌、歌词、元数据、分析与发现功能属于 TuneSync Plus；具体额度与方案请以应用内说明为准。"
 			},
 			"purchase": {
 				"title": "购买",
@@ -781,15 +799,15 @@
 		"faq": {
 			"title": "常见问题",
 			"q1": "如何将音乐添加到 TuneSync？",
-			"a1": "TuneSync 与您自己的音乐库配合使用。您可以从文件应用导入音频文件，或通过设置 > 网络发现连接到 WebDAV/NAS 服务器。应用支持 MP3、FLAC、M4A 等常见音频格式。",
+			"a1": "TuneSync 使用你自己的音乐库。可以导入本地文件夹，或连接 WebDAV 服务器，以及 Plex、Subsonic、Navidrome、Jellyfin、Emby、Synology Audio Station 等音乐服务器。支持 FLAC、ALAC、M4A 等常见格式。",
 			"q2": "TuneSync 需要联网吗？",
 			"a2": "核心播放功能可离线使用。下载专辑封面、歌词和元数据，或使用可选的 AI 功能时需要网络连接。",
 			"q3": "唱歌/K 歌模式如何工作？",
-			"a3": "播放歌曲时，点按唱歌/麦克风按钮。授予麦克风权限后，TuneSync 将显示同步歌词并录制与伴奏混合的人声。录音仅保存在您的设备本地。",
+			"a3": "播放歌曲时点击演唱/麦克风按钮，授予麦克风权限后，TuneSync 会显示同步歌词，并把你的声音与伴奏一起录制。录音保存在本机，可在音频工作室中混音、裁剪并分享。",
 			"q4": "我的数据隐私吗？",
 			"a4": "是的。TuneSync 本地优先，不收集您的个人数据。详情请参阅我们的隐私政策。",
 			"q5": "支持哪些设备？",
-			"a5": "TuneSync 需要 iOS 18 或更高版本，已针对 iPhone 优化。"
+			"a5": "TuneSync 已上架 App Store，支持 iPhone、iPad 与 Mac，界面会按设备自适应。当前所需的最低系统版本请以 App Store 页面为准。"
 		},
 		"resources": {
 			"title": "使用文档",

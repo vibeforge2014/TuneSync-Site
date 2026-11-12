@@ -7,7 +7,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 	const t = await getTranslations('privacy')
 
 	return (
-		<article className="prose-doc container-page max-w-3xl py-12 md:py-16">
+		<article className="prose-doc container-page max-w-4xl py-16 md:py-24">
 			<p className="text-sm text-[var(--fg-subtle)]">{t('lastUpdated')}</p>
 			<h1>{t('title')}</h1>
 			<p className="text-lg text-[var(--fg-muted)]">{t('intro')}</p>

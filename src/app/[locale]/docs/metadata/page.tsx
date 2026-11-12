@@ -19,8 +19,7 @@ export default async function MetadataPage({ params }: { params: Promise<{ local
 			<ScreenshotPlaceholder
 				label={t('shotMetadata')}
 				hint={t('shotHint')}
-				screenshot="metadata.png"
-				tint="#10b981"
+				screenshot={`${locale}/library.png`}
 			/>
 
 			<h2>{t('sources.title')}</h2>

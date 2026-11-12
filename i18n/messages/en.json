@@ -1,7 +1,7 @@
 {
 	"common": {
 		"siteName": "TuneSync",
-		"tagline": "Bring music from across your accounts and devices back into one place.",
+		"tagline": "Bring music from your servers, folders, and devices back into one place.",
 		"rights": "All rights reserved.",
 		"disclaimer": "An unofficial introduction and user guide. Not affiliated with Apple Inc.",
 		"appleDisclaimer": "Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc. App Store is a service mark of Apple Inc.",
@@ -10,8 +10,8 @@
 		"backHome": "Back to home"
 	},
 	"meta": {
-		"title": "TuneSync — Personal music, lyrics & karaoke recording",
-		"description": "Connect a NAS or local folders, then browse, search, and play one personal library on iPhone. Enrich metadata and lyrics, separate vocals, and polish karaoke takes in Recording Studio."
+		"title": "TuneSync — Your music, all in one place",
+		"description": "Connect WebDAV, Plex, Subsonic, Navidrome, Jellyfin, Emby, Synology Audio Station, or local folders. Browse and play one library, keep listening with infinite playback and smooth transitions, follow synced lyrics, separate vocals, and record, mix, and share your own takes."
 	},
 	"nav": {
 		"features": "Features",
@@ -25,17 +25,17 @@
 		"privacy": "Privacy"
 	},
 	"home": {
-		"badge": "TuneSync 1.0.7 · Native music for iPhone",
-		"headline": "Your music, <accent>all in one place</accent>",
-		"subhead": "Connect a NAS and local folders, then browse, search, and play one personal library. Enrich metadata and lyrics, turn favorite tracks into accompaniment, and polish your takes in the new Recording Studio.",
+		"badge": "TuneSync 1.0.32 · iPhone, iPad & Mac",
+		"headline": "<lead>Your music,</lead><accent>all in one place</accent>",
+		"subhead": "Connect WebDAV, Plex, Subsonic, Navidrome, Jellyfin, Emby, Synology Audio Station, or local folders. TuneSync brings everything into one library, keeps playing with infinite playback and smooth transitions, follows synced lyrics, and lets you separate vocals to sing, record, and mix your own take.",
 		"introTitle": "Music shouldn't be spread across half a dozen apps.",
-		"introBody": "TuneSync brings your servers, folders, and player together. Connect once and you're ready.",
+		"introBody": "TuneSync brings your servers, folders, and player together. Connect once and start listening while the rest of your library fills in.",
 		"ctaPrimary": "Get started",
 		"ctaSecondary": "See features",
-		"ctaDownload": "Download for iOS",
+		"ctaDownload": "Download TuneSync",
 		"downloadEyebrow": "Download",
 		"downloadTitle": "Download TuneSync",
-		"downloadSubtitle": "Connect music servers and local folders on iPhone, then manage your library, lyrics, karaoke, and recordings in one place. TuneSync is currently available for iPhone.",
+		"downloadSubtitle": "TuneSync is on the App Store for iPhone, iPad, and Mac. Core library browsing and everyday playback are free; TuneSync Plus adds advanced karaoke, lyrics, metadata, analysis, and discovery.",
 		"downloadAvailable": "Available now",
 		"downloadComingSoon": "Unavailable",
 		"downloadIOSAction": "Get started",
@@ -43,16 +43,16 @@
 		"downloadUnavailable": "Not available yet",
 		"downloadPlatforms": {
 			"ios": {
-				"label": "iOS",
-				"desc": "A native experience built for iPhone — connect a server, organize your library, and play."
+				"label": "iPhone / iPad / Mac",
+				"desc": "One native app with layouts that adapt to iPhone, iPhone Duo, iPad, and Mac. Connect a server, organize your library, and play."
 			},
 			"android": {
 				"label": "Android",
-				"desc": "There is no Android version today; TuneSync is currently focused on a native iPhone experience."
+				"desc": "There is no Android version today; TuneSync is focused on Apple platforms."
 			},
 			"windows": {
 				"label": "Windows",
-				"desc": "Windows is not planned right now; the focus is on the best iPhone experience first."
+				"desc": "Windows is not planned right now; the focus is on iPhone, iPad, and Mac."
 			}
 		},
 		"phoneLabel": "TuneSync app screenshot",
@@ -65,112 +65,130 @@
 				"role": "NAS user · self-hosted WebDAV"
 			},
 			"quote2": {
-				"text": "The AI DJ's auto-continue is genuinely useful — it tops up the queue when it runs low, so I don't have to keep selecting.",
+				"text": "Infinite playback quietly tops up the queue with similar tracks, and the crossfade keeps the music going without gaps.",
 				"author": "M. Chen",
-				"role": "BYOK with DeepSeek"
+				"role": "Long listening sessions"
 			},
 			"quote3": {
-				"text": "I didn't expect to remove vocals and sing on my phone. Drop the vocal, sing with the accompaniment, and play it back afterward.",
+				"text": "I didn't expect to remove vocals and sing on my phone. Lower the original vocal, sing along, then open Audio Studio to mix the take.",
 				"author": "Kai",
-				"role": "Core ML separation"
+				"role": "Karaoke recording"
 			},
 			"quote4": {
-				"text": "My library info was fairly disorganized. After one batch organize, the artwork and release years are mostly filled in.",
+				"text": "My library info was fairly disorganized. Comparing file tags with MusicBrainz and iTunes let me choose exactly which fields to fill in.",
 				"author": "Zhang Rui",
-				"role": "Full-library batch refresh"
+				"role": "Metadata cleanup"
 			},
 			"quote5": {
-				"text": "I appreciate using my own API key — requests go straight to the model I chose, without any intermediary.",
+				"text": "The iPad layout gives the lyrics their own space, and the beat-reactive background is a nice touch without being distracting.",
 				"author": "D. Wang",
-				"role": "Self-hosted Ollama"
+				"role": "iPad + iPhone"
 			},
 			"quote6": {
-				"text": "It found my server on the LAN automatically and connected after a quick setup — easier than I expected.",
+				"text": "It found my server on the LAN and connected after a quick setup — easier than I expected.",
 				"author": "Eric",
-				"role": "SMB / NFS connection"
+				"role": "Plex on a home server"
 			}
 		},
 		"ctaTitle": "Connect your music and start listening.",
-		"ctaBody": "Follow the quick-start guide to link a server — it only takes a few minutes."
+		"ctaBody": "Add a server or a local folder and press play — artwork and metadata fill in while you listen."
 	},
 	"features": {
 		"title": "Features",
-		"subtitle": "Library, playback, lyrics, karaoke, and recording polish — together in one app.",
+		"subtitle": "One library, endless listening, and a studio for your own takes — all in one app.",
 		"pageTitle": "Features",
 		"library": {
 			"title": "Library",
-			"desc": "Connect WebDAV / SMB / NFS / FTP servers, or import local folders. TuneSync builds one library.",
-			"featureTitle": "Access your NAS music on your phone",
-			"featureDesc": "On the same network, TuneSync automatically discovers your media server — configure once and you're connected. Choose which folders to index; playback begins as soon as indexing completes.",
-			"featureB1": "WebDAV / SMB / NFS / FTP / DAAP protocols",
-			"featureB2": "Bonjour auto-discovery of LAN servers",
-			"featureB3": "Folder-level indexing — only what you choose",
-			"featureB4": "Mix local folders and remote servers in one library",
-			"screenshot": "Library screenshot"
+			"desc": "Songs, albums, artists, and playlists from every connected source, searchable in one place.",
+			"featureTitle": "One library for all your music",
+			"featureDesc": "Browse by song, album, artist, or playlist, or search the whole library. TuneSync starts playing as soon as folders are added, and artwork and metadata keep filling in while you listen.",
+			"featureB1": "Browse songs, albums, artists, and playlists",
+			"featureB2": "Search across every connected source",
+			"featureB3": "Play while indexing continues in the background",
+			"featureB4": "Artwork and metadata fill in gradually",
+			"screenshot": "Library screen"
+		},
+		"sources": {
+			"title": "Your sources",
+			"desc": "WebDAV, Plex, Subsonic, Navidrome, Jellyfin, Emby, Synology Audio Station, and local folders.",
+			"featureTitle": "Connect the music you already own",
+			"featureDesc": "Add a WebDAV server, pick a music server, or import local folders. TuneSync indexes only the folders you choose, and playback starts right away while artwork and metadata keep filling in.",
+			"featureB1": "WebDAV over HTTPS, plus local music folders",
+			"featureB2": "Plex, Subsonic, Navidrome, Jellyfin, Emby",
+			"featureB3": "Synology Audio Station and folder-level indexing",
+			"featureB4": "Play immediately while indexing continues",
+			"screenshot": "Add Server screen"
 		},
 		"player": {
 			"title": "Playback",
-			"desc": "Full-screen player with line-by-line synced lyrics, queue, sleep timer, AirPlay.",
-			"featureTitle": "Lyrics highlight line by line as the song plays",
-			"featureDesc": "The player scrolls lyrics in time with playback and highlights the current line — tap any line to jump there. The background color is sampled from the artwork, and you can switch to plain-text reading mode when no timing is available.",
-			"featureB1": "Full-screen / mini-player, switch anytime",
-			"featureB2": "Synced lyrics: auto-scroll, tap-to-seek, drag-to-browse",
-			"featureB3": "Queue, loop, shuffle, speed, AirPlay",
-			"featureB4": "Sleep timer and background playback",
-			"screenshot": "Player screenshot"
+			"desc": "Lossless playback, infinite queue, smooth transitions, and a player that moves with the beat.",
+			"featureTitle": "Keep listening, without reaching for your phone",
+			"featureDesc": "Play FLAC, ALAC, and the rest of your library with background audio and a full queue. Infinite playback refills the queue with similar tracks as it runs low, and smooth transitions blend songs with a 1, 3, 5, or 8-second crossfade. The full-screen player takes its color from the artwork and can follow beats detected on device.",
+			"featureB1": "FLAC, ALAC, and common formats with background playback",
+			"featureB2": "Infinite playback refills the queue automatically",
+			"featureB3": "1 / 3 / 5 / 8-second smooth transitions",
+			"featureB4": "Artwork-colored, beat-reactive player background",
+			"screenshot": "Now Playing screen"
+		},
+		"lyrics": {
+			"title": "Lyrics & karaoke",
+			"desc": "Synced or static lyrics with adjustable size and motion; one tap into sing mode.",
+			"featureTitle": "Follow every line, then switch to singing",
+			"featureDesc": "Lyrics scroll in time with the song with the current line highlighted, or stay still as plain text. Adjust text size and motion to suit you, then tap the mic to separate vocals and backing tracks — on device, or with an optional configured cloud service.",
+			"featureB1": "Synced or static lyrics with adjustable text size",
+			"featureB2": "Optional motion that follows beats detected on device",
+			"featureB3": "Vocal separation on device or via an optional cloud service",
+			"featureB4": "One tap from lyrics into sing mode",
+			"screenshot": "Synced lyrics screen"
 		},
 		"karaoke": {
-			"title": "Sing along",
-			"desc": "Separate vocals and accompaniment on-device, lower the original vocal, and record yourself with the microphone.",
-			"featureTitle": "Remove the vocal, sing with the accompaniment",
-			"featureDesc": "TuneSync splits a track into vocal and accompaniment stems on your device, with independent volume for each. Lower the original vocal, keep the accompaniment, and sing along — the microphone records your performance in sync. The first separation takes a moment; results are cached for reuse.",
-			"featureB1": "On-device Core ML separation (MDX / DTTNet)",
-			"featureB2": "Live vocal-level control with a 3-2-1 countdown",
-			"featureB3": "Mic recording with input/output latency compensation",
-			"featureB4": "Saves to “My Recordings” with a direct path into Recording Studio",
-			"screenshot": "Karaoke screenshot"
+			"title": "Sing & record",
+			"desc": "Lower the original vocal, sing with the accompaniment, and record your take in sync.",
+			"featureTitle": "Your take, recorded in time with the song",
+			"featureDesc": "Once the split is ready, lower the original vocal and keep the accompaniment. Sing along with the lyrics while the microphone records your voice, mixed with input/output latency compensation so everything stays aligned. A failed cloud separation can be cancelled and retried without leaving the player.",
+			"featureB1": "Independent vocal and backing levels",
+			"featureB2": "Mic recording with latency compensation",
+			"featureB3": "On-device or optional cloud separation",
+			"featureB4": "Cancel and retry a failed separation in place",
+			"screenshot": "Recording in progress screen"
 		},
-		"recordingStudio": {
-			"title": "Recording Studio",
-			"desc": "See the real waveform, trim and shape your karaoke recordings, and save without touching the original.",
-			"featureTitle": "Polish a take into the version worth keeping",
-			"featureDesc": "After saving a karaoke take, open it directly in Recording Studio. Select the keep range on its real waveform, adjust master volume, and add Studio or Concert Hall ambience. The original stays intact for instant comparison, undo, or restoration.",
-			"featureB1": "Real waveform timeline with precise trim handles",
-			"featureB2": "Master volume plus Studio and Concert Hall ambience",
-			"featureB3": "Original / Edited A/B preview with undo and redo",
-			"featureB4": "Non-destructive save, share, and one-tap restore",
-			"screenshot": "TuneSync Recording Studio"
+		"audioStudio": {
+			"title": "Audio Studio",
+			"desc": "Mix, trim, and punch in on real waveforms; compare Edited with Original.",
+			"featureTitle": "Shape a take into the version worth keeping",
+			"featureDesc": "Open a saved recording in Audio Studio. Balance vocal and backing, trim the keep range, or punch in a section. Choose Vocal Forward, Natural Blend, or Stage Ambience, then adjust tone, space, and vocal alignment. Switch between Edited and Original at any time — the source take is never overwritten.",
+			"featureB1": "Mix / Trim / Punch In on real waveforms",
+			"featureB2": "Vocal Forward, Natural Blend, Stage Ambience presets",
+			"featureB3": "Tone, space, and vocal alignment controls",
+			"featureB4": "Edited / Original A/B preview with non-destructive save",
+			"screenshot": "Audio Studio screen"
 		},
-		"ai": {
-			"title": "AI assistant",
-			"desc": "Bring your own API key. Let AI pick the next song or tidy up file names.",
-			"featureTitle": "Use your own key with your preferred model",
-			"featureDesc": "Enter your own API key to get started — OpenAI, Anthropic, Gemini, Zhipu, DeepSeek and others are preconfigured, or specify a custom endpoint or local Ollama. The AI DJ continues your queue based on your listening habits, and can tidy up irregular file names.",
-			"featureB1": "40+ provider presets + custom OpenAI-compatible endpoints",
-			"featureB2": "Instant / reasoning model roles, auto-selected per task",
-			"featureB3": "AI DJ with three autonomy levels: preview / one-tap / auto-continue",
-			"featureB4": "Tool calling: web search, album art, lyrics, playback and playlist control",
-			"screenshot": "AI settings screenshot"
+		"takePlayback": {
+			"title": "Play it back",
+			"desc": "Listen to your finished take in the player, keep refining it, or share it.",
+			"featureTitle": "Hear the result where you hear everything else",
+			"featureDesc": "A finished take shows up in the player like any other track, with its own artwork-colored background. Listen, decide what to fix, go back into Audio Studio, or share the file when it sounds right.",
+			"featureB1": "Recorded takes play in the same player",
+			"featureB2": "Keep refining without losing the original",
+			"featureB3": "Share a finished take from the app",
+			"featureB4": "Advanced studio tools are part of TuneSync Plus",
+			"screenshot": "Recorded take playback screen"
 		},
 		"metadata": {
 			"title": "Metadata",
-			"desc": "Auto-fill artwork, lyrics, release year, and track numbers.",
-			"featureTitle": "Fill in artwork, year, and lyrics in one pass",
-			"featureDesc": "TuneSync compares across iTunes, MusicBrainz, and other sources to fill in missing artwork, release years, and track numbers. Works per track, per album, or across the whole library. When sources conflict, your configured weights decide.",
-			"featureB1": "iTunes / MusicBrainz / AI multi-source matching",
-			"featureB2": "Track / album / artist refresh + batch organizing",
-			"featureB3": "Source weights and per-field “overwrite” policies",
-			"screenshot": "Metadata screenshot"
+			"desc": "Compare file tags, MusicBrainz, and iTunes data, then choose which fields to apply."
 		},
-		"discovery": {
-			"title": "Discover",
-			"desc": "See charts from Apple Music / Bilibili / YouTube, identify songs with ShazamKit.",
-			"featureTitle": "When you're not sure what to play",
-			"featureDesc": "Home aggregates charts from several platforms. When you don't have a specific track in mind, TuneSync offers recommendations based on your listening history. Hear a song you like? Open recognition to identify it.",
-			"featureB1": "Apple Music / Bilibili / YouTube / Last.fm multi-source charts",
-			"featureB2": "Suggestions based on what you usually play",
-			"featureB3": "ShazamKit recognition with browsable history",
-			"screenshot": "Discovery screenshot"
+		"recognition": {
+			"title": "Song recognition",
+			"desc": "Recognize a song playing nearby and play the matching track from your library."
+		},
+		"devices": {
+			"title": "Every screen",
+			"desc": "Layouts adapt to iPhone, iPhone Duo, iPad, and Mac."
+		},
+		"plus": {
+			"title": "TuneSync Plus",
+			"desc": "Core listening is free. Plus adds advanced karaoke, lyrics, metadata, analysis, and discovery."
 		}
 	},
 	"docsNavGroups": {
@@ -184,7 +202,7 @@
 		"player": "Player",
 		"lyrics": "Lyrics",
 		"karaoke": "Karaoke",
-		"recordingStudio": "Recording Studio",
+		"recordingStudio": "Audio Studio",
 		"ai": "AI assistant",
 		"metadata": "Metadata",
 		"discovery": "Discovery",
@@ -202,8 +220,8 @@
 		"gettingStarted": {
 			"title": "Getting started",
 			"lead": "On first use, follow the four-step guide to import your music.",
-			"shotWelcome": "Welcome guide screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/getting-started.png",
+			"shotWelcome": "Add a music source",
+			"shotHint": "Screenshot from the current version.",
 			"overview": {
 				"title": "The overall flow",
 				"body": "First launch walks you through four pages — welcome, connect a server, add your library, polish (artwork, lyrics, karaoke) — each explaining one step. Then it drops you into a setup wizard that tracks the rest (how many servers, folders, tracks, pending items) as a checklist."
@@ -217,7 +235,7 @@
 			},
 			"step2": {
 				"title": "Connect servers",
-				"body": "Supports WebDAV, SMB, NFS, FTP. Connect a server first, then add folders to it. Manage every server's status and test connectivity in one place — once configured, it is ready to use, without switching between discovery and connection."
+				"body": "Connect WebDAV, Plex, Subsonic, Navidrome, Jellyfin, Emby, or Synology Audio Station — or import local folders. Add a source first, then choose which folders to index. Connection status and a connection test live in one place."
 			},
 			"step3": {
 				"title": "Add your library",
@@ -234,7 +252,7 @@
 			"permissions": {
 				"title": "Permissions you'll be asked for",
 				"body": "Only when you use the thing that needs it:",
-				"localNetwork": "Local network — to find LAN WebDAV / FTP / SMB / NFS servers",
+				"localNetwork": "Local network — to find and connect to music servers on your LAN",
 				"microphone": "Microphone — used for song recognition (identifying music playing nearby) and karaoke recording",
 				"speech": "Speech recognition — transcribes the vocal on-device to add timing to plain lyrics",
 				"applemusic": "Apple Music — so playback can continue in the background"
@@ -247,16 +265,16 @@
 		"library": {
 			"title": "Library",
 			"lead": "Combine local folders and remote servers into a single library.",
-			"shotLibrary": "Library screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/library.png",
+			"shotLibrary": "Library screen",
+			"shotHint": "Screenshot from the current version.",
 			"protocols": {
-				"title": "Supported protocols",
-				"body": "Connects over these protocols — self-hosted servers or a NAS:",
-				"webdav": "WebDAV — the most common for self-hosting; also supports encrypted WebDAVs",
-				"smb": "SMB — Windows sharing and most NAS defaults; common for Synology, QNAP, etc.",
-				"nfs": "NFS — common network filesystem on Linux and NAS, fast",
-				"ftp": "FTP / FTPS — classic file transfer; FTPS is the encrypted variant",
-				"daap": "DAAP — iTunes music sharing protocol"
+				"title": "Supported sources",
+				"body": "Connect these music servers and sources — self-hosted services, a NAS, or files already on your device:",
+				"webdav": "WebDAV — the most common choice for self-hosting; HTTPS is recommended for remote access",
+				"mediaServers": "Plex, Jellyfin, Emby — connect to the media server you already run",
+				"subsonic": "Subsonic and Navidrome — lightweight self-hosted music servers",
+				"synology": "Synology Audio Station — sign in to your NAS and add its music folders",
+				"local": "Local folders — import music directly from Files, then browse it alongside your servers"
 			},
 			"connect": {
 				"title": "Connect a server",
@@ -266,7 +284,7 @@
 				},
 				"step2": {
 					"title": "Pick a protocol, enter the address",
-					"body": "Choose WebDAV / SMB / NFS / FTP, then the address, port, and share path. Not sure it's reachable? Hit “Test Connection” first."
+					"body": "Choose a source, then enter its address, port, and credentials. Not sure it's reachable? Hit “Test Connection” first."
 				},
 				"step3": {
 					"title": "Enter credentials, save",
@@ -279,13 +297,13 @@
 			},
 			"shotHintNote": "",
 			"discover": {
-				"title": "Bonjour auto-discovery",
-				"body": "On the same network, TuneSync finds _webdav._tcp, _smb._tcp, _ftp._tcp, _nfs._tcp on its own and drops you straight into setup — no typing addresses."
+				"title": "Find servers on your network",
+				"body": "On the same network, TuneSync can discover nearby music servers and take you straight into setup — no typing addresses."
 			},
 			"connectStep": {},
 			"indexing": {
 				"title": "Indexing",
-				"body": "Once folders are added, TuneSync scans the audio files inside (mp3, flac, m4a, wav, etc.), reads each file's embedded info (title, artist, album, artwork), and builds the library structure. You can play as soon as it's done — no need to wait for everything to be read. It runs in the background; see progress on Home and under Settings → Background Tasks & Logs — e.g. how many tracks scanned, how many left.",
+				"body": "Once folders are added, TuneSync scans the audio files inside (mp3, flac, m4a, wav, etc.) and reads each file's embedded info (title, artist, album, artwork) to build the library. You can start playing right away — artwork and metadata fill in gradually while indexing continues in the background. See progress on Home and under Settings → Background Tasks & Logs.",
 				"note": "Only the folders you pick get indexed — it won't pull in the whole disk. When you add new songs to a folder later, the next launch does an incremental scan — no full rebuild."
 			},
 			"playlists": {
@@ -299,8 +317,8 @@
 		"player": {
 			"title": "Player",
 			"lead": "Full-screen player, mini player, queue, and playback controls.",
-			"shotPlayer": "Player screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/player-lyrics.png",
+			"shotPlayer": "Now Playing screen",
+			"shotHint": "Screenshot from the current version.",
 			"modes": {
 				"title": "Three modes",
 				"body": "The full-screen player switches between three views at the bottom — tap to change:",
@@ -339,8 +357,8 @@
 		"lyrics": {
 			"title": "Lyrics",
 			"lead": "Line-by-line synced lyrics, reading mode, and multi-source lyric retrieval.",
-			"shotLyrics": "Lyrics screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/lyrics.png",
+			"shotLyrics": "Synced lyrics screen",
+			"shotHint": "Screenshot from the current version.",
 			"modes": {
 				"title": "Two modes",
 				"body": "The lyrics view switches automatically based on whether timing exists:",
@@ -385,11 +403,11 @@
 		"karaoke": {
 			"title": "Karaoke",
 			"lead": "Separate vocals and accompaniment on-device, lower the original vocal, and record yourself with the microphone.",
-			"shotKaraoke": "Karaoke screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/karaoke.png",
+			"shotKaraoke": "Recording in progress",
+			"shotHint": "Screenshot from the current version.",
 			"how": {
 				"title": "How it works",
-				"body": "In karaoke mode, TuneSync splits the song into vocal and accompaniment stems right on your phone, and the two volumes are independent: drop the original vocal, keep the accompaniment, and sing along. The whole thing runs on-device — your songs aren't uploaded and it doesn't hit the network."
+				"body": "In karaoke mode, TuneSync splits the song into vocal and accompaniment stems on your device, and the two volumes are independent: drop the original vocal, keep the accompaniment, and sing along. On-device separation keeps your songs on the phone; an optional configured cloud service is available when you need it."
 			},
 			"flow": {
 				"title": "The karaoke flow",
@@ -424,19 +442,19 @@
 			},
 			"model": {
 				"title": "First time needs a model",
-				"body": "Vocal separation uses an on-device model (MDX-light, running via Core ML). First use means getting it ready under Settings → Vocal Separation — just download it. Separation works in chunks stitched together (chunk + overlap-add), and the result is cached for reuse — so the first time a given song takes a bit (tens of seconds), after that it's instant."
+				"body": "Vocal separation uses an on-device model (MDX-light, running via Core ML). First use means getting it ready under Settings → Vocal Separation — just download it. Separation works in chunks stitched together and the result is cached for reuse. If a device can't prepare a split locally, you can configure an optional cloud separation service instead."
 			},
 			"recordings": {
 				"title": "My Recordings",
-				"body": "Saved takes live in Settings → My Recordings as .m4a files. Play, share, or delete them, or open Recording Studio to trim and shape the sound. A take contains your vocal and accompaniment with input/output latency compensation to keep them aligned."
+				"body": "Saved takes live in Settings → My Recordings as .m4a files. Play, share, or delete them, or open Audio Studio to mix, trim, and punch in. A take contains your vocal and accompaniment with input/output latency compensation to keep them aligned."
 			},
 			"studio": {
-				"title": "Keep editing after you save",
-				"body": "After Save and Stop, choose Edit Recording to enter Recording Studio immediately. You can also open it later from Settings → My Recordings. Edits render to a separate file, so the original take is never overwritten."
+				"title": "Keep editing in Audio Studio",
+				"body": "After Save and Stop, choose Edit Recording to enter Audio Studio immediately. You can also open it later from Settings → My Recordings. Edits render to a separate file, so the original take is never overwritten."
 			},
 			"compatibility": {
 				"title": "Karaoke device compatibility",
-				"body": "TuneSync requires iOS 18 or later. iPhone 13 and newer support full automatic vocal separation; iPhone 12 can prepare individual songs manually. iPhone 11 and earlier cannot create new separations, but cached karaoke tracks and existing recordings remain available."
+				"body": "Vocal separation runs on-device on supported iPhones. If a device can't prepare a split locally, an optional configured cloud separation service can handle it instead. A failed cloud preparation can be cancelled and retried from the player without blocking playback."
 			},
 			"live": {
 				"title": "Live Activity",
@@ -444,37 +462,37 @@
 			}
 		},
 		"recordingStudio": {
-			"title": "Recording Studio",
-			"lead": "Trim karaoke takes against their real waveform, shape the sound, and keep an original you can always restore.",
-			"screenshot": "Recording Studio waveform trimming screen",
+			"title": "Audio Studio",
+			"lead": "Mix vocal and backing, trim the keep range, or punch in — without touching the original take.",
+			"screenshot": "Audio Studio waveform and mixer screen",
 			"open": {
 				"title": "How to open it",
-				"body": "After saving a karaoke take, choose Edit Recording. Or go to Settings → My Recordings, open a recording's menu, and choose edit."
+				"body": "After saving a karaoke take, choose Edit Recording. You can also open Audio Studio later from Settings → My Recordings."
 			},
 			"workflow": {
 				"title": "Editing workflow",
 				"step1": {
-					"title": "Choose the keep range on the waveform",
-					"body": "Drag the trim handles at either end of the timeline, or park the playhead and set it as the start or end. The final duration updates as you work."
+					"title": "Balance the two tracks",
+					"body": "Use the Vocal and Backing sliders, or start from the Vocal Forward, Natural Blend, or Stage Ambience preset."
 				},
 				"step2": {
-					"title": "Compare the original and edit",
-					"body": "Switch between Original and Edited, then use play, skip back or forward five seconds, and the timeline to check every cut and sound change."
+					"title": "Trim or punch in",
+					"body": "Drag the waveform handles to set the keep range, or use Punch In to replace a section of the take."
 				},
 				"step3": {
-					"title": "Shape the sound",
-					"body": "Open Sound to adjust the master level and choose No Ambience, Studio, or Concert Hall room character."
+					"title": "Fine-tune the sound",
+					"body": "Adjust Tone, Space, and Vocal Alignment so your voice sits where you want it against the backing track."
 				},
 				"step4": {
-					"title": "Save or share",
-					"body": "Tap Save to render the edited version. Share the finished file directly, or restore the original from the More menu when you want a clean start."
+					"title": "Compare, save, share",
+					"body": "Switch between Edited and Original, then save the edited version or share it directly. The source take stays intact."
 				}
 			},
 			"controls": {
-				"title": "Editing controls",
-				"timeline": "The waveform timeline shows the selected range, playhead, and final duration",
-				"preview": "Original / Edited A/B preview with five-second skip controls",
-				"history": "Undo and redo track trim and sound changes made in the current editing session",
+				"title": "Studio controls",
+				"timeline": "Real vocal and backing waveforms with the selected range and final duration",
+				"preview": "Edited / Original A/B preview with playback controls",
+				"history": "Undo and redo for mix and trim changes made in the current session",
 				"share": "Sharing uses the current effective version; save first to share the finished edit"
 			},
 			"nondestructive": {
@@ -489,8 +507,8 @@
 		"ai": {
 			"title": "AI assistant",
 			"lead": "Use your own API key to let AI recommend tracks, tidy file names, or write album intros. Requests go directly to your chosen provider, without an intermediary.",
-			"shotAi": "AI settings screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/ai-dj.png",
+			"shotAi": "AI assistant settings",
+			"shotHint": "The layout may change between versions — check the app.",
 			"setup": {
 				"title": "Enable AI",
 				"step1": {
@@ -553,8 +571,8 @@
 		"metadata": {
 			"title": "Metadata",
 			"lead": "Compare across sources to fill in artwork, lyrics, and track information, keeping the library organized.",
-			"shotMetadata": "Metadata screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/metadata.png",
+			"shotMetadata": "Library and tracks",
+			"shotHint": "Screenshot from the current version.",
 			"sources": {
 				"title": "Sources",
 				"body": "TuneSync pulls info from these sources, then compares and picks the best:",
@@ -597,8 +615,8 @@
 		"discovery": {
 			"title": "Discover",
 			"lead": "Home recommendations, multi-platform charts, and song recognition to help you find what to play next.",
-			"shotDiscovery": "Discovery screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/discovery.png",
+			"shotDiscovery": "Library home",
+			"shotHint": "Screenshot from the current version.",
 			"home": {
 				"title": "Home",
 				"body": "Home arranges sections based on your library contents and listening habits — empty sections are hidden:",
@@ -633,8 +651,8 @@
 		"settings": {
 			"title": "Settings",
 			"lead": "Appearance, language, player animation, cache, and background tasks.",
-			"shotSettings": "Settings screenshot",
-			"shotHint": "Replace with a real screenshot: public/screenshots/settings.png",
+			"shotSettings": "Sources and indexing",
+			"shotHint": "Screenshot from the current version.",
 			"appearance": {
 				"title": "Appearance",
 				"theme": {
@@ -684,18 +702,18 @@
 			"lead": "An optional subscription for advanced audio, lyrics, metadata, and discovery features. Core listening stays free.",
 			"overview": {
 				"title": "What Plus unlocks",
-				"body": "TuneSync Plus unlocks the advanced capabilities below. Some compute-heavy features also include a recurring free allowance:"
+				"body": "TuneSync Plus unlocks the advanced capabilities below. Core library browsing and everyday playback stay free."
 			},
 			"features": {
 				"title": "Included with Plus",
-				"separation": "Vocal separation (Karaoke) — split a track into vocal and accompaniment on-device",
+				"separation": "Vocal separation (Karaoke) — split a track into vocal and accompaniment on device, or with an optional cloud service",
 				"lyrics": "Synced lyrics generation — let the app add timing to plain-text lyrics on-device",
-				"scraping": "Precise metadata scraping — slowest, most thorough scraping mode that checks every source",
-				"trends": "Apple Music Trend Discovery — the current region's Top 10"
+				"scraping": "Precise metadata scraping — compare file tags, MusicBrainz, and iTunes data before applying",
+				"trends": "Discovery and analysis — recommendations and audio-feature analysis"
 			},
 			"free": {
 				"title": "What's free",
-				"body": "Core listening stays free: WebDAV / SMB / NFS / FTP connections, indexing and browsing, background playback, existing synchronized lyrics, song recognition, and basic metadata organization. Vocal separation and synced-lyrics generation share two free uses per week; BPM and audio-feature analysis includes five per day. The app shows the current allowance and device eligibility."
+				"body": "Core listening stays free: connecting your sources, indexing and browsing, background playback, existing synced lyrics, song recognition, and basic metadata organization. Advanced karaoke, lyrics, metadata, analysis, and discovery features are part of TuneSync Plus. See the app for current allowances and plan details."
 			},
 			"purchase": {
 				"title": "Purchasing",
@@ -781,15 +799,15 @@
 		"faq": {
 			"title": "Frequently Asked Questions",
 			"q1": "How do I add music to TuneSync?",
-			"a1": "TuneSync works with your own music library. You can import audio files from the Files app, or connect to a WebDAV/NAS server via Settings > Network Discovery. The app supports MP3, FLAC, M4A, and other common audio formats.",
+			"a1": "TuneSync works with your own music library. Import local folders, or connect a WebDAV server or a music server such as Plex, Subsonic, Navidrome, Jellyfin, Emby, or Synology Audio Station. It plays FLAC, ALAC, M4A, and other common formats.",
 			"q2": "Does TuneSync require an internet connection?",
 			"a2": "Core playback works offline. An internet connection is needed for downloading album art, lyrics, and metadata, or when using optional AI features.",
 			"q3": "How does the karaoke/sing mode work?",
-			"a3": "While a song is playing, tap the sing/microphone button. Grant microphone permission, and TuneSync will display synchronized lyrics and record your voice mixed with the instrumental. Recordings are saved locally on your device.",
+			"a3": "While a song is playing, tap the sing/microphone button. Grant microphone permission, and TuneSync will display synchronized lyrics and record your voice mixed with the accompaniment. Recordings are saved locally and can be mixed, trimmed, and shared from Audio Studio.",
 			"q4": "Is my data private?",
 			"a4": "Yes. TuneSync is local-first and does not collect your personal data. See our Privacy Policy for details.",
 			"q5": "Which devices are supported?",
-			"a5": "TuneSync requires iOS 18 or later and is optimized for iPhone."
+			"a5": "TuneSync is on the App Store for iPhone, iPad, and Mac, with layouts that adapt to each device. Check the App Store listing for the current minimum system version."
 		},
 		"resources": {
 			"title": "Documentation",

@@ -19,8 +19,6 @@ export default async function AiPage({
       <ScreenshotPlaceholder
         label={t("shotAi")}
         hint={t("shotHint")}
-        screenshot="ai-dj.png"
-        tint="#06b6d4"
       />
 
       <h2>{t("setup.title")}</h2>

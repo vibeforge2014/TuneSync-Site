@@ -11,38 +11,36 @@ pnpm install
 pnpm dev          # http://localhost:3000  (served from "/")
 ```
 
-To preview the GitHub Pages build locally (with the `/TuneSync` base path):
+To preview the production static export locally:
 
 ```bash
-BASE_PATH=/TuneSync-Site pnpm build
+STATIC_EXPORT=true pnpm build
 cd out && python3 -m http.server 8080
-# open http://localhost:8080/TuneSync-Site/
+# open http://localhost:8080/zh-CN/
 ```
 
-## Deploy to GitHub Pages
+## Deploy to Cloudflare Pages
 
-Deployment is automated via `.github/workflows/deploy-site.yml`. On every
-push to `master` that touches `site/**` (or via manual `workflow_dispatch`),
-the workflow:
+Deployment is automated via `.github/workflows/deploy-pages.yml`. Every push
+to `master` (or a manual `workflow_dispatch`) runs:
 
 1. Installs deps with `pnpm install --frozen-lockfile`
-2. Builds with `BASE_PATH=/TuneSync` (static export to `site/out/`)
-3. Uploads `site/out/` and deploys to GitHub Pages
+2. Builds with `STATIC_EXPORT=true` (static export to `out/`, without a base path)
+3. Uploads `out/` to the `tunesync-site` Cloudflare Pages project using
+   `--branch=master`, the project's production branch
 
-### One-time repository setup
+The production site is [tunesync.zensoft.top](https://tunesync.zensoft.top/),
+with [tunesync-site.pages.dev](https://tunesync-site.pages.dev/) as the Pages URL.
+Check the workflow result and both addresses after deployment.
 
-In the GitHub repo (**Settings → Pages**):
+### Repository secrets
 
-1. **Source**: `GitHub Actions` (not “Deploy from a branch”)
-2. Under **Settings → Actions → General → Workflow permissions**, allow
-   `Read and write permissions` so the workflow can create the deployment.
+The workflow uses `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` from
+GitHub Actions secrets. The token needs permission to deploy to Cloudflare Pages.
 
-The site then lives at **`https://<user>.github.io/TuneSync/`**.
-
-> The base path `/TuneSync` is derived from the repo name. If you rename the
-> repo or use a custom domain, set `BASE_PATH` accordingly:
-> - Custom domain (e.g. `tunesync.app`) → `BASE_PATH="" pnpm build` (root)
-> - Different repo name → `BASE_PATH=/<repo-name>`
+The legacy GitHub Pages script remains available through `pnpm deploy`, but is
+not the production publishing path. Sub-path exports can still use
+`BASE_PATH=/TuneSync-Site pnpm build` when needed.
 
 ## Structure
 
@@ -51,7 +49,7 @@ src/
 ├── app/[locale]/            # localized routes (zh-CN, en)
 │   ├── page.tsx             # home
 │   ├── features/            # feature deep-dives
-│   └── docs/                # product guides, including Recording Studio
+│   └── docs/                # product guides, including Audio Studio
 ├── components/
 │   ├── site/                # Header, Footer, LangSwitcher, ThemeToggle
 │   ├── marketing/           # Hero, FeatureGrid, Showcase, PhoneMockup

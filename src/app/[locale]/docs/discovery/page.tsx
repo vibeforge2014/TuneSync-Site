@@ -19,8 +19,7 @@ export default async function DiscoveryPage({
       <ScreenshotPlaceholder
         label={t("shotDiscovery")}
         hint={t("shotHint")}
-        screenshot={`${locale}/search.png`}
-        tint="#ec4899"
+        screenshot={`${locale}/library.png`}
       />
 
       <h2>{t("home.title")}</h2>

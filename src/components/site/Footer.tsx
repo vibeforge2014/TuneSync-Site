@@ -8,41 +8,32 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t" style={{ borderColor: "var(--border)" }}>
-      <div className="container-page py-14">
-        <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]">
+    <footer className="site-footer">
+      <div className="container-page">
+        <div className="footer-top">
           <div>
-            <Logo size={30} />
-            <p className="mt-4 max-w-xs text-sm text-[var(--fg-muted)]">
-              {tCommon("tagline")}
-            </p>
+            <Logo size={32} />
+            <p className="footer-tagline">{tCommon("tagline")}</p>
           </div>
-
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-[var(--fg-subtle)]">
-              {tNav("product")}
-            </p>
-            <ul className="mt-3 space-y-2 text-sm">
-              <li><Link className="text-[var(--fg-muted)] hover:text-[var(--fg)]" href="/features">{tNav("features")}</Link></li>
-              <li><Link className="text-[var(--fg-muted)] hover:text-[var(--fg)]" href="/docs/getting-started">{tNav("gettingStarted")}</Link></li>
-            </ul>
+            <p className="footer-label">{tNav("product")}</p>
+            <div className="footer-links">
+              <Link href="/features">{tNav("features")}</Link>
+              <Link href="/docs/getting-started">{tNav("gettingStarted")}</Link>
+            </div>
           </div>
-
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-[var(--fg-subtle)]">
-              {tNav("resources")}
-            </p>
-            <ul className="mt-3 space-y-2 text-sm">
-              <li><Link className="text-[var(--fg-muted)] hover:text-[var(--fg)]" href="/docs">{tNav("docs")}</Link></li>
-              <li><Link className="text-[var(--fg-muted)] hover:text-[var(--fg)]" href="/support">{tNav("support")}</Link></li>
-              <li><Link className="text-[var(--fg-muted)] hover:text-[var(--fg)]" href="/privacy">{tNav("privacy")}</Link></li>
-            </ul>
+            <p className="footer-label">{tNav("resources")}</p>
+            <div className="footer-links">
+              <Link href="/docs">{tNav("docs")}</Link>
+              <Link href="/support">{tNav("support")}</Link>
+              <Link href="/privacy">{tNav("privacy")}</Link>
+            </div>
           </div>
         </div>
-
-        <div className="mt-10 flex flex-col items-center justify-between gap-2 border-t pt-6 text-xs text-[var(--fg-subtle)] sm:flex-row"
-             style={{ borderColor: "var(--border)" }}>
-          <p>© {year} TuneSync. {tCommon("rights")}</p>
+        <p className="footer-wordmark" aria-hidden>TuneSync<span className="text-[var(--brand)]">.</span></p>
+        <div className="footer-bottom">
+          <p>© {year} TUNESYNC / {tCommon("rights")}</p>
           <p>{tCommon("disclaimer")}</p>
         </div>
       </div>

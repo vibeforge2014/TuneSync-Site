@@ -19,8 +19,7 @@ export default async function GettingStartedPage({
       <ScreenshotPlaceholder
         label={t("shotWelcome")}
         hint={t("shotHint")}
-        screenshot="getting-started.png"
-        tint="#3366ff"
+        screenshot={`${locale}/sources.png`}
       />
 
       <h2>{t("overview.title")}</h2>

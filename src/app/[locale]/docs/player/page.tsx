@@ -19,8 +19,7 @@ export default async function PlayerPage({
       <ScreenshotPlaceholder
         label={t("shotPlayer")}
         hint={t("shotHint")}
-        screenshot="player-lyrics.png"
-        tint="#a855f7"
+        screenshot={`${locale}/player.png`}
       />
 
       <h2>{t("modes.title")}</h2>

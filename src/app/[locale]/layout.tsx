@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "../../../i18n/routing";
 import Header from "../../components/site/Header";
 import Footer from "../../components/site/Footer";
+import PageTransition from "../../components/site/PageTransition";
 
 type Props = {
   children: React.ReactNode;
@@ -83,7 +84,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="flex min-h-dvh flex-col">
             <Header />
-            <main className="flex-1">{children}</main>
+            <PageTransition>{children}</PageTransition>
             <Footer />
           </div>
         </NextIntlClientProvider>

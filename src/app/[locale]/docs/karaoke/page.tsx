@@ -19,8 +19,7 @@ export default async function KaraokePage({
       <ScreenshotPlaceholder
         label={t("shotKaraoke")}
         hint={t("shotHint")}
-        screenshot="karaoke.png"
-        tint="#f97316"
+        screenshot={`${locale}/recording.png`}
       />
 
       <h2>{t("how.title")}</h2>

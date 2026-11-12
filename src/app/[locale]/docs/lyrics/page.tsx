@@ -19,8 +19,7 @@ export default async function LyricsPage({
       <ScreenshotPlaceholder
         label={t("shotLyrics")}
         hint={t("shotHint")}
-        screenshot="lyrics.png"
-        tint="#8b5cf6"
+        screenshot={`${locale}/lyrics.png`}
       />
 
       <h2>{t("modes.title")}</h2>

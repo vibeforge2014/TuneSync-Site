@@ -15,7 +15,7 @@ export default function Sidebar() {
     <nav className="space-y-7">
       {DOC_NAV.map((group) => (
         <div key={group.groupKey}>
-          <p className="px-3 text-xs font-semibold uppercase tracking-wider text-[var(--fg-subtle)]">
+          <p className="docs-sidebar-label px-3 uppercase text-[var(--fg-subtle)]">
             {tGroups(group.groupKey)}
           </p>
           <ul className="mt-2 space-y-0.5 border-l" style={{ borderColor: "var(--border)" }}>
@@ -61,11 +61,13 @@ export function MobileSidebar() {
         {label}
         <ChevronDown className={`size-4 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && (
-        <div className="mt-2 rounded-[var(--radius)] border p-4" style={{ borderColor: "var(--border)", background: "var(--bg-elevated)" }}>
-          <Sidebar />
+      <div className={`docs-mobile-panel ${open ? "is-open" : ""}`} aria-hidden={!open} inert={!open}>
+        <div>
+          <div className="mt-2 rounded-[var(--radius)] border p-4" style={{ borderColor: "var(--border)", background: "var(--bg-elevated)" }}>
+            <Sidebar />
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

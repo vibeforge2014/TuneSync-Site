@@ -28,10 +28,10 @@ export default async function LibraryPage({
       <KeyValueTable
         rows={[
           { k: "WebDAV / WebDAVs", v: t("protocols.webdav") },
-          { k: "SMB", v: t("protocols.smb") },
-          { k: "NFS", v: t("protocols.nfs") },
-          { k: "FTP / FTPS", v: t("protocols.ftp") },
-          { k: "DAAP", v: t("protocols.daap") },
+          { k: "Plex / Jellyfin / Emby", v: t("protocols.mediaServers") },
+          { k: "Subsonic / Navidrome", v: t("protocols.subsonic") },
+          { k: "Synology Audio Station", v: t("protocols.synology") },
+          { k: "Local folders", v: t("protocols.local") },
         ]}
       />
 
